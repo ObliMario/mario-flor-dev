@@ -1,9 +1,17 @@
+/* declare root var colors */
+
+:root {
+  --color-primary-dark: #282c34;
+  --color-primary-light: #ffffff;
+
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vh;
   pointer-events: none;
 }
 
@@ -14,14 +22,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--color-primary-dark);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  height: 10vh;
+  padding: 0em 2em;
 }
 
 .App-link {
@@ -35,4 +42,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header div:first-child {
+  margin-right: auto;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu div {
+  margin-left: 1em;
+}
+
+/* Container CSS */
+
+.Container {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+}
+
+/* Left Bar */
+
+.LeftBar {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-primary-dark);
+  justify-content: flex-start;
+  color: #ffffff;
+}
+
+.personalData {
+  color: #ffffff;
+}
+
+/* Right Bar */
+
+.RightBar {
+  width: 100%;
+  padding: 4em;
+}
+
+.blogImg {
+  text-align: center;
+}
+
+.blogImg img {
+  height: 20em;
 }
