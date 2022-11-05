@@ -1,1 +1,1 @@
-This is my personar Web Page where I publish the projects I had worked on
+This is my personal Web Page where I publish the projects I had worked on
