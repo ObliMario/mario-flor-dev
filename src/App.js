@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { BlogPage } from "./BlogPage";
@@ -6,10 +6,11 @@ import { ProfilePage } from "./ProfilePage";
 import { Menu } from "./Menu";
 import { BlogPost } from "./BlogPost";
 
-
 function App() {
+
   return (
     <HashRouter>
+      
       <Menu />
       <Routes>
         <Route path="/" element={<HomePage />} />
