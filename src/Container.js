@@ -35,7 +35,7 @@ function Container({ children }) {
                 value: "#282c34",
               },
             },
-            fpsLimit: 60,
+            fpsLimit: 70,
             interactivity: {
               events: {
                 onClick: {
@@ -46,31 +46,31 @@ function Container({ children }) {
                   enable: true,
                   mode: "repulse",
                 },
-                resize: true,
+                resize: false,
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 1,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 130,
                   duration: 0.4,
                 },
               },
             },
             particles: {
               color: {
-                value: "#ffffff",
+                value: "#61dafb",
               },
               links: {
                 color: "#61dafb",
                 distance: 150,
                 enable: true,
                 opacity: 0.3,
-                width: 5,
+                width: 1,
               },
               collisions: {
-                enable: true,
+                enable: false,
               },
               move: {
                 directions: "none",
@@ -79,7 +79,7 @@ function Container({ children }) {
                   default: "bounce",
                 },
                 random: false,
-                speed: 2,
+                speed: 1,
                 straight: false,
               },
               number: {
@@ -90,13 +90,13 @@ function Container({ children }) {
                 value: 80,
               },
               opacity: {
-                value: 1,
+                value: 0.3,
               },
               shape: {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 1, max: 3 },
               },
             },
             detectRetina: true,

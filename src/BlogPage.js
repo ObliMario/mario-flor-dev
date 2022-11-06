@@ -9,7 +9,7 @@ function BlogPage() {
     <Container>
       <h1>Projects</h1>
 
-      <ul>
+      <ul className="blog-ul">
         {posts.map((post) => (
           <BlogLink key={post.slug} post={post} />
         ))}

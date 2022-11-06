@@ -33,9 +33,9 @@ datas.push({
   title: "LinkedIn",
   slug: "https://www.linkedin.com/in/mario-flor-7a94bb221/",
 });
-datas.push({
+/* datas.push({
   title: "Twitter",
   slug: "https://twitter.com/MarioFlorDev",
-});
+}); */
 
 export { LeftBar };

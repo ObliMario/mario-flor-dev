@@ -23,7 +23,7 @@ function BlogPost() {
 
   return (
     <div>
-      <button onClick={returnToBlog}>Return to blog</button>
+      <button className="returnBtn" onClick={returnToBlog}>Return to blog</button>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
       {/* if post.image exists */}
