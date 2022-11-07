@@ -6,11 +6,18 @@ function ProfilePage() {
     <Container>
       <h1>Mario Flor Peñafiel</h1>
       {/* Load image from s3 */}
-      <img
-        src="https://marioflordev.s3.us-west-2.amazonaws.com/cdimage+(3).jfif"
-        alt="ProfilePicture"
-        width="200"
-      />
+      <div className="profilePic">
+        <img
+          src="https://marioflordev.s3.us-west-2.amazonaws.com/cdimage+(3).jfif"
+          alt="ProfilePicture"
+          width="200"
+        />
+        <div className="tool-tip">
+          <p> This image has been uploaded to s3</p>
+        </div >
+      </div>
+
+      <p> mail: mariofrancisco4d@gmail.com </p>
       <p>
         I am an IT engineer and I have been working as web developer since 2020.
       </p>

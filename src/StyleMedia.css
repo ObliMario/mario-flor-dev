@@ -1,0 +1,11 @@
+/* Style when screen is for a phone */
+
+@media screen and (max-width: 600px) {
+  .LeftBar {
+    display: none;
+  }
+  .RightBar{
+    padding: 1em;
+  }
+
+}

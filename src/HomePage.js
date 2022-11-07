@@ -10,7 +10,12 @@ function HomePage() {
         This is a personal blog to present my self and show my projects.
         <br />I hope you enjoy it.
       </p>
-
+      <p>
+        You can see my projects and my profile by clicking on the menu on the top-right corner.
+      </p>
+      <p>
+        Please, feel free to contact me if you have any question.
+      </p>
     </Container>
   );
 }

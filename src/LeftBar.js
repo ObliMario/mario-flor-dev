@@ -34,6 +34,10 @@ datas.push({
   slug: "https://www.linkedin.com/in/mario-flor-7a94bb221/",
 });
 /* datas.push({
+  title: "Email",
+  slug: "mailto:mariofrancisco4d@gmail.com",
+}); */
+/* datas.push({
   title: "Twitter",
   slug: "https://twitter.com/MarioFlorDev",
 }); */

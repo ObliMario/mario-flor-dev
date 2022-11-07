@@ -1,4 +1,5 @@
-import "./App.css";
+import "./Style.css";
+import "./StyleMedia.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { BlogPage } from "./BlogPage";
