@@ -26,7 +26,7 @@ function BlogPost() {
       <button className="returnBtn" onClick={returnToBlog}>
         Return to blog
       </button>
-      <div className="profile-data">
+      <div className="container-data">
         <h1>{post.title}</h1>
         <p>{post.content}</p>
         {/* if post.image exists */}

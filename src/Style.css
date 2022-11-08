@@ -4,6 +4,7 @@
   --color-primary-dark: #282c34;
   --color-primary-dark-fade: #282c34d9;
   --color-primary-light: #ffffff;
+  --color-primary-light-fade: #ffffff31;
   --color-react: #61dafb;
   --color-react-fade: #61dafb3b;
 }
@@ -117,6 +118,7 @@ a{
 .blogImg a:hover {
   color: var(--color-react);
 }
+
 .blog-ul li a {
   font-size: 1.2em;
   color: var(--color-primary-light);
@@ -191,7 +193,7 @@ a{
 .work-data {
   align-items: center;
 }
-.profile-data {
+.container-data {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,4 +202,22 @@ a{
   padding: 2em 1em;
   border-radius: 8px;
   border: 1px solid var(--color-react-fade);
+}
+
+.container-data div{
+  max-width: 900px;
+  margin: auto;
+}
+
+.container-data div ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+.skills-data li{
+  margin-left: 2em;
+}
+.skills-data ul{
+  columns: 2;
 }
