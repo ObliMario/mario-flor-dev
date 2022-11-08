@@ -7,7 +7,7 @@ import { Container } from "./Container";
 function BlogPage() {
   return (
     <Container>
-      <h1>Projects</h1>
+      <h1>Projects (click on them for more info!) </h1>
 
       <ul className="blog-ul">
         {posts.map((post) => (
