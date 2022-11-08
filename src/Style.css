@@ -8,6 +8,10 @@
   --color-react-fade: #61dafb3b;
 }
 
+a{
+  color: var(--color-primary-light);
+}
+
 .App {
   text-align: center;
 }
@@ -115,6 +119,7 @@
 }
 .blog-ul li a {
   font-size: 1.2em;
+  color: var(--color-primary-light);
 }
 
 .blog-ul li a:visited {
