@@ -41,10 +41,11 @@ function ProfilePage() {
       <h2>Professional Summary</h2>
       <div className="profile-data">
         <p>
-          Highly skilled software development professional bringing enormous
-          talents for software design, development and integration. Offering
-          advanced knowledge of in-demand programming languages. Background
-          writing code and developing systems for technology applications.
+          Outstanding IT Engineer. Highly skilled software development
+          professional bringing enormous talents for software design,
+          development and integration. Offering advanced knowledge of in-demand
+          programming languages. Background writing code and developing systems
+          for technology applications.
         </p>
       </div>
       <h2>Skills</h2>

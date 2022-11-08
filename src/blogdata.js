@@ -6,7 +6,7 @@ posts.push({
   title: "This website!",
   slug: "website",
   content:
-    "This website is made with React and React Router. Also there are elements of AWS",
+    "This website is made with React and React Router. Also there are elements uploaded on AWS S3. This page has many CSS animations and transitions, also the HTML is made in a way that it is responsive to different screen sizes. The code in JS, HTML and CSS are made in optimized way to make the page load faster. In this page you can find some of my projects and my professional information. In the future I will add more projects and more information about me.The source code is available on GitHub.", 
   imgcss: "App-logo",
   image: logo,
 });

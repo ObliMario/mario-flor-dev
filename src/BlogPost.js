@@ -23,24 +23,28 @@ function BlogPost() {
 
   return (
     <div>
-      <button className="returnBtn" onClick={returnToBlog}>Return to blog</button>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-      {/* if post.image exists */}
-      {post.image && (
-        <div className="blogImg">
-          <img src={post.image} alt="logo" className={post.imgcss} />
-        </div>
-      )}
-      {/* if post.link exists */}
-      {post.YTlink && (
-        <div className="blogImg">
-          <YouTube videoId={post.YTID} opts={opts} />
-          <a href={post.YTlink} target="_blank" rel="noreferrer">
-            Link to the project video on Youtube
-          </a>
-        </div>
-      )}
+      <button className="returnBtn" onClick={returnToBlog}>
+        Return to blog
+      </button>
+      <div className="profile-data">
+        <h1>{post.title}</h1>
+        <p>{post.content}</p>
+        {/* if post.image exists */}
+        {post.image && (
+          <div className="blogImg">
+            <img src={post.image} alt="logo" className={post.imgcss} />
+          </div>
+        )}
+        {/* if post.link exists */}
+        {post.YTlink && (
+          <div className="blogImg">
+            <YouTube videoId={post.YTID} opts={opts} />
+            <a href={post.YTlink} target="_blank" rel="noreferrer">
+              Link to the project video on Youtube
+            </a>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
