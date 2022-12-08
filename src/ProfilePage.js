@@ -9,11 +9,7 @@ function ProfilePage() {
       <h1>Mario Flor Peñafiel</h1>
       {/* Load image from s3 */}
       <div className="profilePic">
-        <img
-          src="https://marioflordev.s3.us-west-2.amazonaws.com/cdimage+(3).jfif"
-          alt="ProfilePicture"
-          width="200"
-        />
+        <img src="https://marioflordev.s3.us-west-2.amazonaws.com/cdimage+(3).jfif" alt="ProfilePicture" width="200" />
         <div className="tool-tip">
           <p> This image has been uploaded to s3</p>
         </div>
@@ -24,19 +20,16 @@ function ProfilePage() {
       <div className="container-data">
         <div>
           <p>
-            I am an IT engineer and I have been working as web developer since
-            2020.
+            I am an IT engineer with experience as a web developer since 2020. I am passionate about web development and constantly learning new
+            technologies, such as React.
           </p>
           <p>
-            I am a passionate about web development and I love to learn new
-            technologies. I am currently learning React. I am a self-taught
-            person and I like to improve my skills. I am always looking for new
-            challenges. I am a team player, always happy to help others. I am a
-            hard worker, I like to work hard to achieve my goals.
+            As a self-taught programmer, I am always looking for opportunities to improve my skills and take on new challenges. I am a team player and
+            enjoy helping others. I am also a hard worker and committed to achieving my goals.
           </p>
           <p>
-            I am also passionate about game development. I have been learning
-            game development since 2020. I have worked with Unity using C#.
+            In addition to web development, I am also passionate about game development. I have been learning game development since 2020 and have
+            experience using Unity and C#.
           </p>
         </div>
       </div>
@@ -44,11 +37,9 @@ function ProfilePage() {
       <div className="container-data">
         <div>
           <p>
-            Outstanding IT Engineer. Highly skilled software development
-            professional bringing enormous talents for software design,
-            development and integration. Offering advanced knowledge of
-            in-demand programming languages. Background writing code and
-            developing systems for technology applications.
+            Experienced IT Engineer with a strong background in software development. Skilled in software design, development, and integration using
+            in-demand programming languages. Demonstrated ability to write efficient and effective code for various technology applications. Seeking
+            to leverage my skills and experience to contribute to the success of a dynamic organization
           </p>
         </div>
       </div>
@@ -78,10 +69,7 @@ function ProfilePage() {
           <p>2015 - 2021</p>
           <ul>
             <li>Awarded Honorable mention Cum laude</li>
-            <li>
-              Certified as a volunteer in the project "Participate in talks and
-              workshops on the use and dissemination of technology"
-            </li>
+            <li>Certified as a volunteer in the project "Participate in talks and workshops on the use and dissemination of technology"</li>
           </ul>
         </div>
       </div>

@@ -6,7 +6,7 @@ posts.push({
   title: "This website!",
   slug: "website",
   content:
-    "This website is made with React and React Router. Also there are elements uploaded on AWS S3. This page has many CSS animations and transitions, also the HTML is made in a way that it is responsive to different screen sizes. The code in JS, HTML and CSS are made in optimized way to make the page load faster. In this page you can find some of my projects and my professional information. In the future I will add more projects and more information about me.The source code is available on GitHub.", 
+    "Welcome to my portfolio website! This website is built using React and React Router, and uses AWS S3 for hosting some of the elements. It features beautiful CSS animations and transitions, and is designed to be fully responsive and adapt to different screen sizes. The code is optimized for speed, ensuring that the page loads quickly for visitors. On this website, you can find some of my projects and learn more about my professional background and skills. I will continue to add more projects and updates to the website in the future. The source code for this website is available on GitHub for anyone who is interested. I hope you enjoy exploring my portfolio website and learning more about my work. Thank you for visiting!", 
   imgcss: "App-logo",
   image: logo,
 });
@@ -22,7 +22,7 @@ posts.push({
   title: "Pacman Game",
   slug: "pacman",
   content:
-    "Pacman game made with Unity This project is a complete Pacman game. The map is made by reading a .csv file and positioning each asset depending on the code in the file. The ghosts IA are just like the original ones. Also, the game contains a system to save the max scores into a .txt file and show them inside the game. You can find the code in the following link: https://github.com/ObliMario/PACMAN",
+    "Introducing PACMAN, the classic arcade game brought to life in Unity! This project is a faithful recreation of the original game, featuring the iconic maze and ghosts with authentic AI behavior. The map is generated dynamically by reading a .csv file, which allows for easy customization and variation. In addition to the classic gameplay, this game also includes a high score system that saves the top scores to a .txt file and displays them within the game. You can check out the source code for this project on GitHub at the following link: https://github.com/ObliMario/PACMAN",
   YTlink: "https://youtu.be/p_NJqCJ2Fts",
   YTID: "p_NJqCJ2Fts",
 });
@@ -30,7 +30,7 @@ posts.push({
   title: "Evolution Game",
   slug: "evo",
   content:
-    "This is the prototype of a game that I am developing. You can choose between two 'animals' with different characteristics of color and size. Their genes define their size and color. So after choosing two, their genes will be mixed and the result will be a new generation of animals. The concept of DNA is based on real DNA dynamics. A new generation of animals will have the characteristics of their parents. The game is still in development",
+    "Welcome to my game prototype! In this game, you can create and mix the genes of two different animals to create a new generation with unique characteristics. The genes of each animal determine their size and color, and the resulting offspring will inherit traits from their parents. This game is based on real DNA dynamics, providing an engaging and educational experience. As you experiment with different combinations of genes, you will see how the characteristics of the animals evolve and change. The game is still in development, but I hope to add more features and content in the future.",
   YTlink: "https://youtu.be/7uEtePL5Ci4",
   YTID: "7uEtePL5Ci4",
 });
@@ -38,7 +38,7 @@ posts.push({
   title: "Encryption System made with Dinamic Systems",
   slug: "DSEncryption",
   content:
-    "We have created a software that implements the generalized encryption and storage method in an app, so that it can be used by anyone with a computer with Linux-Ubuntu operating system. The software makes use of a graphical interface designed with the Tkinter package. This project allows user to encode and decode any digital file. The encryption keys are the initial conditions of 'x0'. In order to open the app you must run the python code 'GUI.py'. You can find the code in the following link: https://github.com/ObliMario/DS_EncryptionSystem",
+    "Introducing my thesis project: a software application that implements a generalized encryption and storage method, designed to be used on computers with the Linux-Ubuntu operating system. The software features a user-friendly graphical interface built using the Tkinter package. This project allows users to easily encode and decode any digital file, using the initial conditions of 'x0' as the encryption keys. To run the app, simply execute the 'GUI.py' python code. You can find the source code for this project on GitHub at the following link: https://github.com/ObliMario/DS_EncryptionSystem I am proud of this project as it represents the culmination of my research and hard work in the field of cryptography and data security. I hope this software proves useful and valuable to other users. Thank you for checking out my thesis project.",
     image: "https://marioflordev.s3.us-west-2.amazonaws.com/DSE.png",
 });
 
@@ -46,7 +46,7 @@ posts.push({
   title: "Quiz Program",
   slug: "quiz",
   content:
-    "This program allows you to enter a .txt file with data of a Quiz. The program will read the file and will show the questions and the answers. The user will have to answer the questions and the program will show the score. You can find the code in the following link:https://github.com/ObliMario/quiz",
+    "Introducing my Quiz program! This program allows you to easily create and administer quizzes using a simple .txt file format. Simply enter the quiz data into the .txt file and the program will automatically read and display the questions and answers. As the user answers the questions, the program will track their score and provide feedback on their performance. At the end of the quiz, the user will receive their final score and can review the correct answers for any questions they may have gotten wrong. You can find the source code for this program on GitHub at the following link: https://github.com/ObliMario/quiz I hope you enjoy using my Quiz program and find it useful for creating and administering quizzes. Thank you for checking out my project!",
     YTlink: "https://youtu.be/bEyFS7pfzKg",
     YTID: "bEyFS7pfzKg",
 });

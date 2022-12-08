@@ -6,14 +6,12 @@ works.push({
   fin: "Present",
   location: "Cuenca, Azuay",
   tareas: [
-    "Collaborated with project managers to select ambitious, but realistic coding milestones on pre-release software project development.",
-    "Updated old code bases to modern development standards, improving functionality.",
-    "Designed customized solutions for proposals to potential customers.",
-    "Pioneered new methods of code review to incorporate wider range of voices.",
-    "Front-End Development",
-    "SQL calls for data management",
-    "Development of advanced and optimized JS code.",
-    "Team-work and communication",
+    "Collaborated with project managers to set ambitious, but realistic coding milestones for pre-release software projects",
+    "Improved the functionality of old code bases by updating them to modern development standards",
+    "Designed customized solutions for proposals to potential customers",
+    "Pioneered new methods of code review to incorporate a wider range of voices",
+    "Worked on front-end development, including SQL calls for data management and advanced and optimized JS code",
+    "Collaborated effectively with my team members and communicated effectively with the rest of the organization",
   ],
 });
 works.push({
@@ -23,10 +21,10 @@ works.push({
   fin: "05/2021",
   location: "Cuenca, Azuay",
   tareas: [
-    "Represented the team at meetings with executives, and discussed project goals and milestones",
-    "Successfully debugged plugin code, utilizing Javascript to develop effective test procedures",
-    "Designed, implemented and monitored web pages and sites for continuous improvement in a fast-paced environment",
-    "Performed appealing, responsive and user-friendly front and back end web development for a range of projects across website, emails, landing pages, e-commerce, etc",
+    "Represented the team at meetings with executives and effectively communicated project goals and milestones",
+    "Successfully debugged plugin code using Javascript and developed effective test procedures",
+    "Designed, implemented, and monitored web pages and sites for continuous improvement in a fast-paced environment",
+    "Developed appealing, responsive, and user-friendly front and back end web designs for a range of projects, including websites, emails, landing pages, and e-commerce platforms",
   ],
 });
 works.push({
@@ -36,11 +34,10 @@ works.push({
   fin: "02/2019",
   location: "Cuenca, Azuay",
   tareas: [
-    "Collaborated effectively in a team of 3 to achieve a billing interface that connects directly to the tax government website",
-    "Usage of SQL to create and update databases",
-    "Storing resulted government files in database",
+    "Collaborated effectively with a team of 3 to create a billing interface that connects directly to the tax government website",
+    "Used SQL to create and update databases, and to store resulted government files",
     "Designed and developed reports in SQL Server Reporting Services",
-    "Met with manager on a weekly basis to provide a detailed project report and milestone updates",
+    "Met with my manager on a weekly basis to provide detailed project reports and milestone updates",
     "Developed and implemented a scanning component using SQL Server",
   ],
 });
