@@ -11,6 +11,14 @@ posts.push({
   image: logo,
 });
 posts.push({
+  title: "Artificial Inteligence Agent",
+  slug: "AI-Game",
+  content:
+    "I trained an artificial intelligence using reinforced learning so that it could learn to play a simple game where it had to collect coins while avoiding an enemy. Through training, the artificial intelligence improved its ability to play the game until it reached the maximum score. You can see how the artificial intelligence learns to play the game in the attached video. This project demonstrates my skills in using artificial intelligence and reinforced learning to solve problems and improve skills.", 
+  YTlink: "https://youtu.be/hoGYSWDP73g",
+  YTID: "hoGYSWDP73g",
+});
+posts.push({
   title: "CS50 Jelly Game",
   slug: "jellygame",
   content:
