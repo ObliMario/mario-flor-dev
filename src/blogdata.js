@@ -59,4 +59,14 @@ posts.push({
     YTID: "bEyFS7pfzKg",
 });
 
+posts.push({
+  title: "Deutsch App",
+  slug: "deutschapp",
+  content:
+    "This app is developed in Flutter and is designed to help users learn German as a foreign language. In the 'Prepositions' section, a list of verbs with their most common prepositions is displayed. It also allows you to add new verbs, new prepositions, and reset the content to its initial state. When you open the practice screen, the verbs to study are shown. The app follows a flashcard model: it only shows the verb and asks you to think of the prepositions that go with it. By pressing 'Reveal prepositions,' the correct prepositions associated with the verb are displayed. When you tap on the card with the preposition, the meaning of the verb with that preposition is shown. From the verbs menu, you can search, modify, add, and delete any verb-preposition combination.",
+    YTlink: "https://youtu.be/bEyFS7pfzKg",
+    YTID: "bEyFS7pfzKg",
+});
+
+
 export { posts };
