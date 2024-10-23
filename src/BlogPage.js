@@ -23,7 +23,7 @@ function BlogPage() {
 function BlogLink({ post }) {
   return (
     <li>
-      <NavLink to={`/blog/${post.slug}`}>{post.title}</NavLink>
+      <NavLink className="NavLinkBlog" to={`/blog/${post.slug}`}>{post.title}</NavLink>
     </li>
   );
 }

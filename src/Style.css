@@ -221,3 +221,7 @@ a{
 .skills-data ul{
   columns: 2;
 }
+
+.NavLinkBlog{
+  text-underline-offset: 2px;
+}
