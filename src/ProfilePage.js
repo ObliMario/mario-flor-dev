@@ -20,16 +20,16 @@ function ProfilePage() {
       <div className="container-data">
         <div>
           <p>
-            I am an IT engineer with experience as a web developer since 2020. I am passionate about web development and constantly learning new
-            technologies, such as React.
+            I am an IT engineer with extensive experience as a web developer since 2020. My passion for web development drives me to continuously learn
+            and explore new technologies, particularly React.
           </p>
           <p>
-            As a self-taught programmer, I am always looking for opportunities to improve my skills and take on new challenges. I am a team player and
-            enjoy helping others. I am also a hard worker and committed to achieving my goals.
+            As a self-taught programmer, I am always seeking opportunities to enhance my skills and embrace new challenges. I thrive in collaborative
+            environments and take pride in my commitment to hard work, always striving to achieve the best results.
           </p>
           <p>
-            In addition to web development, I am also passionate about game development. I have been learning game development since 2020 and have
-            experience using Unity and C#.
+            In addition to web development, I am also deeply interested in game development. Since 2020, I have been honing my skills in Unity and C# to 
+            create engaging digital experiences.
           </p>
         </div>
       </div>
@@ -37,9 +37,9 @@ function ProfilePage() {
       <div className="container-data">
         <div>
           <p>
-            Experienced IT Engineer with a strong background in software development. Skilled in software design, development, and integration using
-            in-demand programming languages. Demonstrated ability to write efficient and effective code for various technology applications. Seeking
-            to leverage my skills and experience to contribute to the success of a dynamic organization.
+            Accomplished IT Engineer with a strong foundation in software development and a demonstrated ability to design, develop, and integrate 
+            complex software solutions. Proficient in a wide range of programming languages, delivering optimized code for diverse applications. I am 
+            eager to apply my expertise to contribute to the success of a forward-thinking organization.
           </p>
         </div>
       </div>
@@ -74,12 +74,12 @@ function ProfilePage() {
           </Col>
           <Col>
             <ul>
-              <li>Conducted research on system-calculated values that did not match reality, identifying causes and solutions.</li>
-              <li>Worked with a team to develop a comprehensive system for vehicle tax calculation, collection, and accounting.</li>
-              <li>Designed a system that included user-friendly features like management options, cancellations, document requests, and reprints.</li>
+              <li>Researched discrepancies in system-calculated values, identifying causes and implementing solutions.</li>
+              <li>Collaborated on developing a comprehensive system for vehicle tax calculation, collection, and accounting.</li>
+              <li>Designed user-friendly features for system management, including options for cancellations, document requests, and reprints.</li>
               <li>Developed a system to validate speeding violations using radar devices throughout Cuenca, Ecuador.</li>
-              <li>Executed complex SQL queries to retrieve information required by the state auditor.</li>
-              <li>Integrated the web service of an external provider to resolve traffic violation issues for the public.</li>
+              <li>Executed complex SQL queries to retrieve data required by the state auditor.</li>
+              <li>Integrated the web service of an external provider to resolve public traffic violation issues.</li>
             </ul>
           </Col>
         </Row>
@@ -96,11 +96,11 @@ function ProfilePage() {
           </Col>
           <Col>
             <ul>
-              <li>Integrated a payment provider into bank websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as water, electricity, and insurance.</li>
-              <li>Migrated at least five transactional banking sites to a new PHP version, improving security, performance, and visual aspects.</li>
-              <li>Optimized and updated about 90% of JavaScript lines considered "code smells" following best practices.</li>
-              <li>Developed a web interface for billing and tax deductions using JavaScript, HTML, CSS, and connected it to a NoSQL database.</li>
-              <li>Identified and fixed numerous bugs on various transactional bank websites using PHP, JavaScript, HTML, and CSS.</li>
+              <li>Integrated a payment provider into banking websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as utilities and insurance.</li>
+              <li>Migrated multiple transactional banking platforms to a new PHP version, enhancing security, performance, and user experience.</li>
+              <li>Optimized and refactored over 90% of JavaScript code to eliminate "code smells," adhering to industry best practices.</li>
+              <li>Developed a web-based billing and tax deduction interface using JavaScript, HTML, CSS, and NoSQL database integration.</li>
+              <li>Identified and resolved critical bugs across various banking transactional websites using PHP, JavaScript, HTML, and CSS.</li>
             </ul>
           </Col>
         </Row>
@@ -112,8 +112,8 @@ function ProfilePage() {
           <h3>Yachay Tech University, Imbabura, Ecuador</h3>
           <p>2015 - 2021</p>
           <ul>
-            <li>Awarded Honorable mention Cum Laude</li>
-            <li>Certified as a volunteer in the project "Participate in talks and workshops on the use and dissemination of technology"</li>
+            <li>Graduated with Honorable Mention, Cum Laude.</li>
+            <li>Certified volunteer in the project: "Participated in talks and workshops on technology usage and dissemination."</li>
           </ul>
         </div>
         <div>
