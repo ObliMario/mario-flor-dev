@@ -1,17 +1,31 @@
 const works = [];
 works.push({
+  company: "EMOV Public Company",
+  position: "Technological Application Analyst",
+  inicio: "10/04/2023",
+  fin: "31/01/2024",
+  location: "Cuenca, Azuay",
+  tareas: [
+    "Researched discrepancies in system-calculated values, identifying causes and implementing solutions.",
+    "Collaborated on developing a comprehensive system for vehicle tax calculation, collection, and accounting.",
+    "Designed user-friendly features for system management, including options for cancellations, document requests, and reprints.",
+    "Developed a system to validate speeding violations using radar devices throughout Cuenca, Ecuador.",
+    "Executed complex SQL queries to retrieve data required by the state auditor.",
+    "Integrated the web service of an external provider to resolve public traffic violation issues.",
+  ],
+});
+works.push({
   company: "LibelulaSoft Ltda",
   position: "Junior Software Developer",
   inicio: "01/2022",
-  fin: "Present",
+  fin: "01/2023",
   location: "Cuenca, Azuay",
   tareas: [
-    "Collaborated with project managers to set ambitious, but realistic coding milestones for pre-release software projects",
-    "Improved the functionality of old code bases by updating them to modern development standards",
-    "Designed customized solutions for proposals to potential customers",
-    "Pioneered new methods of code review to incorporate a wider range of voices",
-    "Worked on front-end development, including SQL calls for data management and advanced and optimized JS code",
-    "Collaborated effectively with my team members and communicated effectively with the rest of the organization",
+    "Integrated a payment provider into banking websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as utilities and insurance.",
+    "Migrated multiple transactional banking platforms to a new PHP version, enhancing security, performance, and user experience.",
+    "Optimized and refactored over 90% of JavaScript code to eliminate code 'smells', adhering to industry best practices.",
+    "Developed a web-based billing and tax deduction interface using JavaScript, HTML, CSS, and NoSQL database integration.",
+    "Identified and resolved critical bugs across various banking transactional websites using PHP, JavaScript, HTML, and CSS.",
   ],
 });
 works.push({
