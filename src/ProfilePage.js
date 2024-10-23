@@ -39,7 +39,7 @@ function ProfilePage() {
           <p>
             Experienced IT Engineer with a strong background in software development. Skilled in software design, development, and integration using
             in-demand programming languages. Demonstrated ability to write efficient and effective code for various technology applications. Seeking
-            to leverage my skills and experience to contribute to the success of a dynamic organization
+            to leverage my skills and experience to contribute to the success of a dynamic organization.
           </p>
         </div>
       </div>
@@ -61,16 +61,75 @@ function ProfilePage() {
       {works.map((work) => (
         <WorkData key={work.inicio} work={work} />
       ))}
+      {/* Updated Work History */}
+      <div className="container-data work-data">
+        <Row>
+          <h2>EMOV Public Company</h2>
+        </Row>
+        <Row>
+          <Col>
+            <p>Technological Application Analyst</p>
+            <h5>Cuenca, Ecuador</h5>
+            10/04/2023 - 31/01/2024
+          </Col>
+          <Col>
+            <ul>
+              <li>Conducted research on system-calculated values that did not match reality, identifying causes and solutions.</li>
+              <li>Worked with a team to develop a comprehensive system for vehicle tax calculation, collection, and accounting.</li>
+              <li>Designed a system that included user-friendly features like management options, cancellations, document requests, and reprints.</li>
+              <li>Developed a system to validate speeding violations using radar devices throughout Cuenca, Ecuador.</li>
+              <li>Executed complex SQL queries to retrieve information required by the state auditor.</li>
+              <li>Integrated the web service of an external provider to resolve traffic violation issues for the public.</li>
+            </ul>
+          </Col>
+        </Row>
+      </div>
+      <div className="container-data work-data">
+        <Row>
+          <h2>Libelulasoft GmbH</h2>
+        </Row>
+        <Row>
+          <Col>
+            <p>Software Developer</p>
+            <h5>Cuenca, Ecuador</h5>
+            10/01/2022 - 10/01/2023
+          </Col>
+          <Col>
+            <ul>
+              <li>Integrated a payment provider into bank websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as water, electricity, and insurance.</li>
+              <li>Migrated at least five transactional banking sites to a new PHP version, improving security, performance, and visual aspects.</li>
+              <li>Optimized and updated about 90% of JavaScript lines considered "code smells" following best practices.</li>
+              <li>Developed a web interface for billing and tax deductions using JavaScript, HTML, CSS, and connected it to a NoSQL database.</li>
+              <li>Identified and fixed numerous bugs on various transactional bank websites using PHP, JavaScript, HTML, and CSS.</li>
+            </ul>
+          </Col>
+        </Row>
+      </div>
       <h2>Education</h2>
       <div className="container-data">
         <div>
           <h2>Bachelor of Science Information Technologies</h2>
-          <h3>Yachay Tech University Imbabura, Ecuador</h3>
+          <h3>Yachay Tech University, Imbabura, Ecuador</h3>
           <p>2015 - 2021</p>
           <ul>
-            <li>Awarded Honorable mention Cum laude</li>
+            <li>Awarded Honorable mention Cum Laude</li>
             <li>Certified as a volunteer in the project "Participate in talks and workshops on the use and dissemination of technology"</li>
           </ul>
+        </div>
+        <div>
+          <h2>German C1</h2>
+          <h3>DID - Deutsch Institut, Frankfurt, Germany</h3>
+          <p>03/18/2024 - 10/18/2024</p>
+        </div>
+        <div>
+          <h2>CS50’s Introduction to Artificial Intelligence with Python</h2>
+          <h3>Harvard University</h3>
+          <p>2021</p>
+        </div>
+        <div>
+          <h2>CS50’s Introduction to Game Development</h2>
+          <h3>Harvard University</h3>
+          <p>2021</p>
         </div>
       </div>
     </Container>
@@ -81,18 +140,18 @@ function WorkData({ work }) {
   return (
     <div className="container-data work-data">
       <Row>
-        <h2> {work.company} </h2>
+        <h2>{work.company}</h2>
       </Row>
       <Row>
         <Col>
-          <p> {work.position} </p>
-          <h5> {work.location}</h5>
+          <p>{work.position}</p>
+          <h5>{work.location}</h5>
           {work.inicio} - {work.fin}
         </Col>
         <Col>
           <ul>
             {work.tareas.map((tarea) => (
-              <li>{tarea}</li>
+              <li key={tarea}>{tarea}</li>
             ))}
           </ul>
         </Col>
