@@ -67,6 +67,15 @@ posts.push({
   YTlink: "https://youtu.be/-pZRJMEHaOQ",
   YTID: "-pZRJMEHaOQ",
 });
+posts.push({
+
+  title: "Arc (Unity VR)",
+  slug: "arcgame",
+  content:
+    "This video showcases a demo of a VR game currently in development using Unity 6. The game challenges players to launch a projectile by applying an initial force and angle. A second hit can be applied mid-flight, guided by hand position, to correct its trajectory. Players can teleport to the ball’s location and are required to launch it again from the same X and Z coordinates—though the launch height remains flexible. The main objective is to activate all the flowers distributed throughout the map. Falling into water resets the player to the starting point, adding a light layer of challenge. Planned features include a timer and shot counter to enable leaderboard rankings, as well as multiple themed levels. Designed as a calm yet engaging experience, this game allows players to relax and enjoy the environment while honing their aiming skills.",
+  YTlink: "https://youtu.be/LgjPBEiC-i4",
+  YTID: "LgjPBEiC-i4",
+});
 
 
 export { posts };
