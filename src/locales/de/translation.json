@@ -1,8 +1,157 @@
 {
-  "title": "Willkommen auf meiner persönlichen Website,",
-  "intro": "Mein Name ist Mario und in diesem Blog möchte ich meine Projekte und Interessen mit dir teilen.\nIch hoffe, du findest etwas, das dir gefällt, und genießt deinen Besuch.",
-  "more": "Wenn du mehr über mich und meine Projekte erfahren möchtest, kannst du auf das Menü oben rechts klicken.\nDort findest du detaillierte Informationen über meine Fähigkeiten und Erfahrungen sowie Links zu meinen wichtigsten Arbeiten.",
-  "contact": "Wenn du Fragen oder Kommentare hast, zögere nicht, mich zu kontaktieren.\nIch bin immer offen für neue Möglichkeiten und den Austausch mit interessanten Menschen.",
-  "thanks": "Danke für deinen Besuch auf meiner Website!",
-  "signature": "Mario"
+  "home": {
+    "title": "Willkommen auf meiner persönlichen Website.",
+    "intro": "Mein Name ist Mario und in diesem Blog möchte ich meine Projekte und Interessen mit dir teilen. Ich hoffe, du findest etwas, das dir gefällt und genießt deinen Besuch.",
+    "more": "Wenn du mehr über mich und meine Projekte erfahren möchtest, kannst du auf das Menü oben rechts klicken. Dort findest du detaillierte Informationen über meine Fähigkeiten und Erfahrungen sowie Links zu meinen wichtigsten Arbeiten.\nWenn du Fragen oder Kommentare hast, zögere nicht, mich zu kontaktieren. Ich bin immer offen für neue Möglichkeiten und den Austausch mit interessanten Menschen.",
+    "thanks": "Danke für deinen Besuch auf meiner Website!",
+    "contact": "Wenn du mit mir in Kontakt treten möchtest, nutze gerne das Kontaktformular oder meine Social-Media-Profile.",
+    "signature": "Mario"
+  },
+  "menu": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "profile": "Profil"
+  },
+  "leftBar": {
+    "title": "IT-Ingenieur",
+    "webdev": "Webentwickler",
+    "gamedev": "Spieleentwickler"
+  },
+  "profile": {
+    "name": "Mario Flor Peñafiel",
+    "s3Note": "Dieses Bild wurde auf S3 hochgeladen",
+    "email": "mariofrancisco4d@gmail.com",
+    "aboutTitle": "Über mich",
+    "about": [
+      "Ich bin ein IT-Ingenieur mit umfassender Erfahrung als Webentwickler seit 2020. Meine Leidenschaft für Webentwicklung motiviert mich, ständig zu lernen und neue Technologien zu erkunden, insbesondere React.",
+      "Als autodidaktischer Programmierer suche ich ständig nach Möglichkeiten, meine Fähigkeiten zu verbessern und neue Herausforderungen anzunehmen. Ich gedeihe in kollaborativen Umgebungen und lege großen Wert auf harte Arbeit und qualitativ hochwertige Ergebnisse.",
+      "Neben Webentwicklung interessiere ich mich auch sehr für Spieleentwicklung. Seit 2020 verbessere ich meine Fähigkeiten in Unity und C#, um ansprechende digitale Erlebnisse zu schaffen."
+    ],
+    "summaryTitle": "Berufliches Profil",
+    "summary": "Erfahrener IT-Ingenieur mit solider Grundlage in Softwareentwicklung und nachgewiesener Fähigkeit, komplexe Softwarelösungen zu entwerfen und zu implementieren. Beherrscht viele Programmiersprachen und liefert optimierten Code. Motiviert, mein Fachwissen in einem zukunftsorientierten Unternehmen einzusetzen.",
+    "skillsTitle": "Fähigkeiten",
+    "skills": [
+      "Softwareentwicklung",
+      "C / C#",
+      "HTML / CSS",
+      "JavaScript-Spezialist",
+      "Spieleentwicklung (Unity, LOVE 2D)",
+      "React",
+      "Python",
+      "Flutter"
+    ],
+    "workTitle": "Berufserfahrung",
+    "educationTitle": "Ausbildung",
+    "education": [
+      {
+        "title": "Deutsch C1",
+        "place": "DID - Deutsch Institut, Frankfurt, Deutschland",
+        "date": "18.03.2024 - 18.10.2024",
+        "description": "Ich habe erfolgreich alle Niveaus (A1-A2-B1-B2-C1) abgeschlossen. Während des Kurses habe ich eine Vielzahl von Themen rund um Deutschland gelernt und die Fähigkeit erworben, die Sprache korrekt zu sprechen, zu hören und zu schreiben."
+      },
+      {
+        "title": "Bachelor of Science in Informationstechnologien",
+        "place": "Yachay Tech Universität, Imbabura, Ecuador",
+        "date": "2015 - 2021",
+        "description": [
+          "Abschluss mit Auszeichnung, Cum Laude.",
+          "Zertifizierter Freiwilliger im Projekt der Universität mit dem Zertifikat: \"Teilnahme an Vorträgen und Workshops über den Einsatz und die Verbreitung von Technologie.\""
+        ]
+      },
+      {
+        "title": "CS50’s Einführung in Künstliche Intelligenz mit Python",
+        "place": "Harvard Universität",
+        "date": "2024",
+        "description": "Dieser Kurs behandelt grundlegende Konzepte und Algorithmen der modernen KI, darunter Spiel-Engines, Handschriftenerkennung und maschinelle Übersetzung. Die Teilnehmer sammeln praktische Erfahrungen mit Suchalgorithmen, Klassifikation, Optimierung, maschinellem Lernen und mehr."
+      },
+      {
+        "title": "CS50’s Einführung in Spieleentwicklung",
+        "place": "Harvard Universität",
+        "date": "2021",
+        "description": "Dieser Kurs konzentriert sich auf die Entwicklung interaktiver 2D- und 3D-Spiele. Durch praktische Projekte lernen die Teilnehmer Konzepte zu Grafik, Animation, Sound und Physik unter Verwendung von Unity, LOVE 2D, Lua und C#."
+      }
+    ]
+  },
+  "emov": {
+    "position": "Analyst für technologische Anwendungen",
+    "tasks": [
+      "Untersuchte Abweichungen bei systemberechneten Werten, identifizierte Ursachen und implementierte Lösungen.",
+      "Arbeitete an der Entwicklung eines umfassenden Systems zur Berechnung, Erhebung und Buchhaltung von Fahrzeugsteuern mit.",
+      "Entwarf benutzerfreundliche Funktionen für die Systemverwaltung, einschließlich Optionen für Stornierungen, Dokumentenanfragen und Nachdrucke.",
+      "Entwickelte ein System zur Validierung von Geschwindigkeitsverstößen mit Radargeräten in ganz Cuenca, Ecuador.",
+      "Führte komplexe SQL-Abfragen durch, um vom staatlichen Rechnungsprüfer angeforderte Daten zu extrahieren.",
+      "Integrierte den Webservice eines externen Anbieters zur Lösung öffentlicher Verkehrsverstoßprobleme."
+    ]
+  },
+  "libelula1": {
+    "position": "Junior Softwareentwickler",
+    "tasks": [
+      "Integrierte einen Zahlungsanbieter in Bankwebsites mithilfe von PHP, JavaScript, HTML und CSS, sodass Nutzer Dienstleistungen wie Strom- oder Versicherungszahlungen durchführen konnten.",
+      "Migrierte mehrere Bankplattformen auf eine neue PHP-Version zur Verbesserung von Sicherheit, Leistung und Benutzererfahrung.",
+      "Optimierte und refaktorisierte über 90 % des JavaScript-Codes zur Beseitigung von 'Code Smells' gemäß den Best Practices der Branche.",
+      "Entwickelte eine webbasierte Schnittstelle für Rechnungsstellung und Steuerabzug mit JavaScript, HTML, CSS und NoSQL-Integration.",
+      "Identifizierte und behob kritische Fehler auf verschiedenen Bank-Websites mithilfe von PHP, JavaScript, HTML und CSS."
+    ]
+  },
+  "webdit": {
+    "position": "Webentwickler",
+    "tasks": [
+      "Vertrete das Team bei Besprechungen mit Führungskräften und kommunizierte Projektziele und Meilensteine effektiv.",
+      "Debuggte erfolgreich Plugin-Code mit JavaScript und entwickelte effiziente Testverfahren.",
+      "Entwarf, implementierte und überwachte Webseiten und Websites zur kontinuierlichen Verbesserung in einem dynamischen Umfeld.",
+      "Entwickelte ansprechende, responsive und benutzerfreundliche Front- und Back-End-Designs für verschiedene Projekte, darunter Websites, E-Mails, Landingpages und E-Commerce-Plattformen."
+    ]
+  },
+  "libelula2": {
+    "position": "Softwareentwickler",
+    "tasks": [
+      "Arbeitete effektiv mit einem Team von drei Personen zusammen, um eine Rechnungsstellungsschnittstelle zu erstellen, die direkt mit dem Steuerportal verbunden ist.",
+      "Verwendete SQL zur Erstellung und Aktualisierung von Datenbanken sowie zur Speicherung der von der Regierung generierten Dateien.",
+      "Entwarf und entwickelte Berichte mit SQL Server Reporting Services.",
+      "Führte wöchentliche Meetings mit dem Manager durch, um Projektfortschritte und Meilensteine zu präsentieren.",
+      "Entwickelte und implementierte eine Scankomponente mit SQL Server."
+    ]
+  },
+  "blog": {
+    "title": "Projekte",
+    "instruction": "(klicke auf sie für mehr Informationen!)",
+    "posts": {
+      "website": {
+        "title": "Diese Website! (React)",
+        "content": "Willkommen auf meiner Portfolio-Website! Diese Seite wurde mit React und React Router erstellt und nutzt AWS S3 zum Hosten einiger Elemente. Sie enthält schöne CSS-Animationen und Übergänge und ist vollständig responsiv, um sich an verschiedene Bildschirmgrößen anzupassen. Der Code ist auf Geschwindigkeit optimiert, um schnelle Ladezeiten zu gewährleisten. Hier findest du einige meiner Projekte und erfährst mehr über meinen beruflichen Werdegang und meine Fähigkeiten. Ich werde in Zukunft weitere Projekte und Updates hinzufügen. Der Quellcode ist auf GitHub verfügbar. Viel Spaß beim Erkunden meiner Website und danke für deinen Besuch!"
+      },
+      "AI-Game": {
+        "title": "Künstliche Intelligenz Agent (Unity)",
+        "content": "Ich habe eine künstliche Intelligenz mithilfe von verstärktem Lernen trainiert, damit sie ein einfaches Spiel spielen kann, in dem sie Münzen sammeln und einem Gegner ausweichen muss. Durch das Training verbesserte sich die KI, bis sie die Höchstpunktzahl erreichte. In einem beigefügten Video kannst du sehen, wie die KI lernt. Dieses Projekt zeigt meine Fähigkeiten im Einsatz von KI und verstärktem Lernen zur Problemlösung und Leistungsverbesserung."
+      },
+      "jellygame": {
+        "title": "CS50 Jelly Spiel (Unity)",
+        "content": "Dieses Spiel wurde als Abschlussprojekt des CS50G-Kurses der Harvard Universität entwickelt. Das Spiel (CS50 Jelly genannt) wurde in Unity erstellt. Es handelt sich um ein Puzzle-Spiel, bei dem man eine Kugel per Mausbewegung steuert – ähnlich wie bei Angry Birds. Mit einem Rechtsklick kann man das Material der Kugel ändern, was für manche Level notwendig ist. Das Spiel enthält fünf Level mit zunehmendem Schwierigkeitsgrad. Verliert man (z. B. durch Spikes), beginnt der Level von vorn. Am Ende erscheint ein Glückwunschbildschirm. Man kann Level wiederholen, um alle Sterne zu sammeln. Quelle: https://github.com/me50/ObliMario"
+      },
+      "pacman": {
+        "title": "Pacman Spiel (Unity)",
+        "content": "Hier ist PACMAN – das klassische Arcade-Spiel, neu entwickelt in Unity! Dieses Projekt ist eine originalgetreue Nachbildung mit authentischem Labyrinth und KI-Verhalten der Geister. Die Karte wird dynamisch aus einer .csv-Datei erzeugt, was einfache Anpassung ermöglicht. Außerdem gibt es ein Highscore-System, das in einer .txt-Datei speichert. Quellcode: https://github.com/ObliMario/PACMAN"
+      },
+      "evo": {
+        "title": "Evolutionsspiel (Unity)",
+        "content": "Willkommen zu meinem Spielprototyp! In diesem Spiel kannst du Gene von zwei Tieren kombinieren, um eine neue Generation mit einzigartigen Eigenschaften zu erzeugen. Die Gene bestimmen Größe und Farbe. Die Nachkommen erben Merkmale von den Eltern. Das Spiel basiert auf echter DNA-Dynamik und bietet ein lehrreiches Erlebnis. Je mehr du experimentierst, desto mehr Veränderungen wirst du sehen. Weitere Funktionen sind in Planung."
+      },
+      "DSEncryption": {
+        "title": "Verschlüsselungssystem mit dynamischen Systemen (C)",
+        "content": "Dies ist mein Abschlussprojekt: eine Software zur allgemeinen Verschlüsselung und Speicherung, entwickelt für Linux-Ubuntu. Die grafische Oberfläche wurde mit Tkinter gebaut. Man kann damit jede Datei verschlüsseln und entschlüsseln, basierend auf dem Startwert 'x0' als Schlüssel. Das Programm wird mit 'GUI.py' gestartet. Der Quellcode ist auf GitHub verfügbar: https://github.com/ObliMario/DS_EncryptionSystem. Ich bin stolz auf dieses Projekt, das meine Arbeit im Bereich Kryptografie und Sicherheit widerspiegelt."
+      },
+      "quiz": {
+        "title": "Quiz-Programm (Python)",
+        "content": "Hier ist mein Quiz-Programm! Es ermöglicht die einfache Erstellung und Durchführung von Tests im .txt-Format. Du gibst die Fragen in eine Datei ein und das Programm liest sie automatisch ein. Es verfolgt deine Punkte und gibt am Ende ein Ergebnis aus. Du kannst auch die richtigen Antworten einsehen. Quellcode: https://github.com/ObliMario/quiz – Ich hoffe, es ist nützlich!"
+      },
+      "deutschapp": {
+        "title": "Deutsch App (Flutter)",
+        "content": "Diese App wurde mit Flutter entwickelt und hilft beim Deutschlernen als Fremdsprache. In der Rubrik 'Präpositionen' werden Verben mit ihren üblichen Präpositionen angezeigt. Du kannst neue Einträge hinzufügen oder den Inhalt zurücksetzen. Beim Üben wird nur das Verb gezeigt, und du sollst die passenden Präpositionen erraten. Nach dem Aufdecken erscheint die Bedeutung. Verwalten kannst du alles über das Menü: suchen, bearbeiten, löschen."
+      },
+      "arcgame": {
+        "title": "Arc (Unity VR)",
+        "content": "Dieses Video zeigt eine Demo eines VR-Spiels, das derzeit mit Unity 6 entwickelt wird. Ziel ist es, ein Projektil mit bestimmter Kraft und Winkel abzufeuern. Während des Flugs kann man es per Handbewegung korrigieren. Man kann sich zum Ball teleportieren und erneut starten (X/Z-Koordinaten bleiben gleich). Ziel ist es, alle Blumen auf der Karte zu aktivieren. Fällt man ins Wasser, startet man neu. Geplant sind: Timer, Schusszähler und verschiedene Level. Ein ruhiges, aber spannendes Erlebnis!"
+      }
+    }
+  }
 }

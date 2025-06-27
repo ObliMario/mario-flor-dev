@@ -16,7 +16,7 @@ import "./i18n";
 function App() {
   return (
     <HashRouter>
-      <LanguageSwitcher /> {/* 🌐 Mostrar siempre el selector */}
+      <LanguageSwitcher /> {/* Mostrar siempre el selector */}
       <Menu />
       <Routes>
         <Route path="/" element={<HomePage />} />

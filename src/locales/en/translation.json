@@ -1,8 +1,161 @@
 {
-    "title": "Welcome to my personal website.",
-    "intro": "My name is Mario and in this blog I want to share with you my projects and interests. I hope you can find something you like and enjoy your visit.",
-    "more": "If you want to know more about me and my projects, you can click on the menu on the top-right corner. There you will find detailed information about my skills and experience, as well as links to my most notable works. \n If you have any questions or comments, don't hesitate to contact me. I am always open to new opportunities and connecting with interesting people.",
-    "thanks": "Thank you for visiting my website!",
-    "contact": "If you want to get in touch, feel free to reach out through the contact form or my social media profiles.",
-    "signature": "Mario"
+    "home": {
+        "title": "Welcome to my personal website.",
+        "intro": "My name is Mario and in this blog I want to share with you my projects and interests. I hope you can find something you like and enjoy your visit.",
+        "more": "If you want to know more about me and my projects, you can click on the menu on the top-right corner. There you will find detailed information about my skills and experience, as well as links to my most notable works. \n If you have any questions or comments, don't hesitate to contact me. I am always open to new opportunities and connecting with interesting people.",
+        "thanks": "Thank you for visiting my website!",
+        "contact": "If you want to get in touch, feel free to reach out through the contact form or my social media profiles.",
+        "signature": "Mario"
+    },
+    "menu": {
+        "home": "Home",
+        "projects": "Projects",
+        "profile": "Profile"
+    },
+    "leftBar": {
+        "title": "IT Engineer",
+        "webdev": "Web Developer",
+        "gamedev": "Game Developer"
+    },
+    "profile": {
+        "name": "Mario Flor Peñafiel",
+        "s3Note": "This image has been uploaded to S3",
+        "email": "mariofrancisco4d@gmail.com",
+        "aboutTitle": "About Me",
+        "about": [
+            "I am an IT engineer with extensive experience as a web developer since 2020. My passion for web development drives me to continuously learn and explore new technologies, particularly React.",
+            "As a self-taught programmer, I am always seeking opportunities to enhance my skills and embrace new challenges. I thrive in collaborative environments and take pride in my commitment to hard work, always striving to achieve the best results.",
+            "In addition to web development, I am also deeply interested in game development. Since 2020, I have been honing my skills in Unity and C# to create engaging digital experiences."
+        ],
+        "summaryTitle": "Professional Summary",
+        "summary": "Accomplished IT Engineer with a strong foundation in software development and a demonstrated ability to design, develop, and integrate complex software solutions. Proficient in a wide range of programming languages, delivering optimized code for diverse applications. I am eager to apply my expertise to contribute to the success of a forward-thinking organization.",
+        "skillsTitle": "Skills",
+        "skills": [
+            "Software Development",
+            "C / C#",
+            "HTML / CSS",
+            "JavaScript Specialist",
+            "Game Development (Unity, LOVE 2D)",
+            "React",
+            "Python",
+            "Flutter"
+        ],
+        "workTitle": "Work History",
+        "educationTitle": "Education",
+        "education": [
+            {
+                "title": "German C1",
+                "place": "DID - Deutsch Institut, Frankfurt, Germany",
+                "date": "18.03.2024 - 18.10.2024",
+                "description": "I have successfully completed all levels (A1-A2-B1-B2-C1) until achieving mastery of the German language (C1). During the course I learned a wide range of topics related to Germany, as well as acquired the skills to speak, listen and write correctly in the language."
+            },
+            {
+                "title": "Bachelor of Science Information Technologies",
+                "place": "Yachay Tech University, Imbabura, Ecuador",
+                "date": "2015 - 2021",
+                "description": [
+                    "Graduated with Honorable Mention, Cum Laude.",
+                    "Certified volunteer in the project taught by the university, obtaining a certificate: \"Participated in talks and workshops on technology usage and dissemination.\""
+                ]
+            },
+            {
+                "title": "CS50’s Introduction to Artificial Intelligence with Python",
+                "place": "Harvard University",
+                "date": "2024",
+                "description": "This course explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own."
+            },
+            {
+                "title": "CS50’s Introduction to Game Development",
+                "place": "Harvard University",
+                "date": "2021",
+                "description": "This course focuses on the development of 2D and 3D interactive games. Students explore the design of such childhood games as Super Mario Bros., Legend of Zelda, and Portal in a quest to understand how video games themselves are implemented. Via lectures and hands-on projects, the course explores principles of 2D and 3D graphics, animation, sound, and collision detection using frameworks like Unity and LÖVE 2D, as well as languages like Lua and C#. By class’s end, students will have programmed several of their own games and gained a thorough understanding of the basics of game design and development."
+            }
+        ]
+    },
+    "emov": {
+        "position": "Technological Application Analyst",
+        "tasks": [
+            "Researched discrepancies in system-calculated values, identifying causes and implementing solutions.",
+            "Collaborated on developing a comprehensive system for vehicle tax calculation, collection, and accounting.",
+            "Designed user-friendly features for system management, including options for cancellations, document requests, and reprints.",
+            "Developed a system to validate speeding violations using radar devices throughout Cuenca, Ecuador.",
+            "Executed complex SQL queries to retrieve data required by the state auditor.",
+            "Integrated the web service of an external provider to resolve public traffic violation issues."
+        ]
+    },
+    "libelula1": {
+        "position": "Junior Software Developer",
+        "tasks": [
+            "Integrated a payment provider into banking websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as utilities and insurance.",
+            "Migrated multiple transactional banking platforms to a new PHP version, enhancing security, performance, and user experience.",
+            "Optimized and refactored over 90% of JavaScript code to eliminate code 'smells', adhering to industry best practices.",
+            "Developed a web-based billing and tax deduction interface using JavaScript, HTML, CSS, and NoSQL database integration.",
+            "Identified and resolved critical bugs across various banking transactional websites using PHP, JavaScript, HTML, and CSS."
+        ]
+    },
+    "webdit": {
+        "position": "Web Developer",
+        "tasks": [
+            "Represented the team at meetings with executives and effectively communicated project goals and milestones.",
+            "Successfully debugged plugin code using JavaScript and developed effective test procedures.",
+            "Designed, implemented, and monitored web pages and sites for continuous improvement in a fast-paced environment.",
+            "Developed appealing, responsive, and user-friendly front and back end web designs for a range of projects, including websites, emails, landing pages, and e-commerce platforms."
+        ]
+    },
+    "libelula2": {
+        "position": "Software Developer",
+        "tasks": [
+            "Collaborated effectively with a team of 3 to create a billing interface that connects directly to the tax government website.",
+            "Used SQL to create and update databases, and to store resulted government files.",
+            "Designed and developed reports in SQL Server Reporting Services.",
+            "Met with my manager on a weekly basis to provide detailed project reports and milestone updates.",
+            "Developed and implemented a scanning component using SQL Server."
+        ]
+    },
+    "blog": {
+        "title": "Projects",
+        "instruction": "(click on them for more info!)",
+        "posts": {
+            "website": {
+                "title": "This website! (React)",
+                "content": "Welcome to my portfolio website! This website is built using React and React Router, and uses AWS S3 for hosting some of the elements. It features beautiful CSS animations and transitions, and is designed to be fully responsive and adapt to different screen sizes. The code is optimized for speed, ensuring that the page loads quickly for visitors. On this website, you can find some of my projects and learn more about my professional background and skills. I will continue to add more projects and updates to the website in the future. The source code for this website is available on GitHub for anyone who is interested. I hope you enjoy exploring my portfolio website and learning more about my work. Thank you for visiting!"
+            },
+            "AI-Game": {
+                "title": "Artificial Intelligence Agent (Unity)",
+                "content": "I trained an artificial intelligence using reinforced learning so that it could learn to play a simple game where it had to collect coins while avoiding an enemy. Through training, the artificial intelligence improved its ability to play the game until it reached the maximum score. You can see how the artificial intelligence learns to play the game in the attached video. This project demonstrates my skills in using artificial intelligence and reinforced learning to solve problems and improve skills."
+            },
+            "jellygame": {
+                "title": "CS50 Jelly Game (Unity)",
+                "content": "This Game was developed as a final project of the course CS50G. A course imparted from Hardvard wich I completed and obtained a certificadte for it. The game developed (called CS50 Jelly) was made in Unity, it is a puzzle game that consists of completing a series of levels by driving a ball with the mouse by clicking the ball and dragging the mouse such as the launching mechanics in angry birds game. By right-clicking, the ball changes its material which will be necessary for some levels. CS50 Jelly consists of five levels that increase in difficulty. In this way, the game has a cohesive start-to-finish experience for the player when the player completes the last level. The player has some loss conditions such as when the ball collides with the spikes or falls out the stage, the player then will lose and repeat the level. Once the player completes the last level, a congratulations screen will appear for completing the game. However, the user can repeat any level to achieve the maximum score in all levels (3 stars) by reaching the goal with the minimum number of possible moves (which are shown on the screen). Reaching 3 stars at all levels can be a secondary goal. You can download the game from my personal Github: https://github.com/me50/ObliMario"
+            },
+            "pacman": {
+                "title": "Pacman Game (Unity)",
+                "content": "Introducing PACMAN, the classic arcade game brought to life in Unity! This project is a faithful recreation of the original game, featuring the iconic maze and ghosts with authentic AI behavior. The map is generated dynamically by reading a .csv file, which allows for easy customization and variation. In addition to the classic gameplay, this game also includes a high score system that saves the top scores to a .txt file and displays them within the game. You can check out the source code for this project on GitHub at the following link: https://github.com/ObliMario/PACMAN"
+            },
+            "evo": {
+                "title":"Evolution Game (Unity)",
+                "content":"Welcome to my game prototype! In this game, you can create and mix the genes of two different animals to create a new generation with unique characteristics. The genes of each animal determine their size and color, and the resulting offspring will inherit traits from their parents. This game is based on real DNA dynamics, providing an engaging and educational experience. As you experiment with different combinations of genes, you will see how the characteristics of the animals evolve and change. The game is still in development, but I hope to add more features and content in the future."
+  
+            },
+            "DSEncryption": {
+                "title":"Encryption System made with Dinamic Systems (C)",
+                "content":"Introducing my thesis project: a software application that implements a generalized encryption and storage method, designed to be used on computers with the Linux-Ubuntu operating system. The software features a user-friendly graphical interface built using the Tkinter package. This project allows users to easily encode and decode any digital file, using the initial conditions of 'x0' as the encryption keys. To run the app, simply execute the 'GUI.py' python code. You can find the source code for this project on GitHub at the following link: https://github.com/ObliMario/DS_EncryptionSystem. I am proud of this project as it represents the culmination of my research and hard work in the field of cryptography and data security. I hope this software proves useful and valuable to other users. Thank you for checking out my thesis project."
+  
+            },
+            "quiz": {
+                "title":"Quiz Program (Python)",
+                "content":"Introducing my Quiz program! This program allows you to easily create and administer quizzes using a simple .txt file format. Simply enter the quiz data into the .txt file and the program will automatically read and display the questions and answers. As the user answers the questions, the program will track their score and provide feedback on their performance. At the end of the quiz, the user will receive their final score and can review the correct answers for any questions they may have gotten wrong. You can find the source code for this program on GitHub at the following link: https://github.com/ObliMario/quiz I hope you enjoy using my Quiz program and find it useful for creating and administering quizzes. Thank you for checking out my project!"
+  
+            },
+            "deutschapp": {
+                "title":"Deutsch App (Flutter)",
+                "content":"This app is developed in Flutter and is designed to help users learn German as a foreign language. In the 'Prepositions' section, a list of verbs with their most common prepositions is displayed. It also allows you to add new verbs, new prepositions, and reset the content to its initial state. When you open the practice screen, the verbs to study are shown. The app follows a flashcard model: it only shows the verb and asks you to think of the prepositions that go with it. By pressing 'Reveal prepositions,' the correct prepositions associated with the verb are displayed. When you tap on the card with the preposition, the meaning of the verb with that preposition is shown. From the verbs menu, you can search, modify, add, and delete any verb-preposition combination."
+  
+            },
+            "arcgame": {
+                "title":"Arc (Unity VR)",
+                "content":"This video showcases a demo of a VR game currently in development using Unity 6. The game challenges players to launch a projectile by applying an initial force and angle. A second hit can be applied mid-flight, guided by hand position, to correct its trajectory. Players can teleport to the ball’s location and are required to launch it again from the same X and Z coordinates—though the launch height remains flexible. The main objective is to activate all the flowers distributed throughout the map. Falling into water resets the player to the starting point, adding a light layer of challenge. Planned features include a timer and shot counter to enable leaderboard rankings, as well as multiple themed levels. Designed as a calm yet engaging experience, this game allows players to relax and enjoy the environment while honing their aiming skills."
+            }
+        }
+    }
 }

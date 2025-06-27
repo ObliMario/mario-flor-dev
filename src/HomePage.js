@@ -7,12 +7,12 @@ function HomePage() {
 
   return (
     <Container>
-      <h1>{t("title")}</h1>
-      <p>{t("intro")}</p>
-      <p>{t("more")}</p>
-      <p>{t("contact")}</p>
-      <p>{t("thanks")}</p>
-      <p>{t("signature")}</p>
+      <h1>{t("home.title")}</h1>
+      <p>{t("home.intro")}</p>
+      <p>{t("home.more")}</p>
+      <p>{t("home.contact")}</p>
+      <p>{t("home.thanks")}</p>
+      <p>{t("home.signature")}</p>
     </Container>
   );
 }

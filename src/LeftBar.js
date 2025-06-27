@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function LeftBar() {
+  const { t } = useTranslation();
   return (
     <div>
       <h1>Mario Flor</h1>
       <br />
-      <p>IT Engineer</p>
-      <p>Web Developer</p>
-      <p>Game Developer</p>
+      <p>{t("leftBar.title")}</p>
+      <p>{t("leftBar.webdev")}</p>
+      <p>{t("leftBar.gamedev")}</p>
 
       <ul>
         {datas.map((data) => (

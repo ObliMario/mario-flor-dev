@@ -1,8 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./logo.svg";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
+  const { t } = useTranslation();
+  const routes = [
+    { path: "/", text: t("menu.home") },
+    { path: "/blog", text: t("menu.projects") },
+    { path: "/profile", text: t("menu.profile") }
+  ];
+
   return (
     <nav>
       <div className="App-header">
@@ -29,10 +37,5 @@ function Menu() {
     </nav>
   );
 }
-
-const routes = [];
-routes.push({ path: "/", text: "Home" });
-routes.push({ path: "/blog", text: "Projects" });
-routes.push({ path: "/profile", text: "Profile" });
 
 export { Menu };

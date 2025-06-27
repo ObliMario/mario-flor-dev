@@ -1,8 +1,166 @@
 {
-  "title": "Bienvenido a mi sitio web personal,",
-  "intro": "Mi nombre es Mario y en este blog quiero compartir contigo mis proyectos e intereses.\nEspero que encuentres algo que te guste y disfrutes tu visita.",
-  "more": "Si quieres saber más sobre mí y mis proyectos, puedes hacer clic en el menú en la esquina superior derecha.\nAllí encontrarás información detallada sobre mis habilidades y experiencia, así como enlaces a mis trabajos más destacados.",
-  "contact": "Si tienes alguna pregunta o comentario, no dudes en contactarme.\nSiempre estoy abierto a nuevas oportunidades y a conectar con personas interesantes.",
-  "thanks": "¡Gracias por visitar mi sitio web!",
-  "signature": "Mario"
+    "home": {
+        "title": "Bienvenido a mi sitio web personal.",
+        "intro": "Mi nombre es Mario y en este blog quiero compartir contigo mis proyectos e intereses. Espero que encuentres algo que te guste y disfrutes tu visita.",
+        "more": "Si quieres saber más sobre mí y mis proyectos, puedes hacer clic en el menú en la esquina superior derecha. Allí encontrarás información detallada sobre mis habilidades y experiencia, así como enlaces a mis trabajos más destacados.\nSi tienes alguna pregunta o comentario, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y a conectar con personas interesantes.",
+        "thanks": "¡Gracias por visitar mi sitio web!",
+        "contact": "Si quieres ponerte en contacto, no dudes en escribirme a través del formulario de contacto o por mis redes sociales.",
+        "signature": "Mario"
+    },
+    "menu": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "profile": "Perfil"
+    },
+    "leftBar": {
+        "title": "Ingeniero en TI",
+        "webdev": "Desarrollador Web",
+        "gamedev": "Desarrollador de Videojuegos"
+    },
+    "profile": {
+        "title": "Perfil",
+        "subtitle": "Sobre mí",
+        "description": "Soy un ingeniero en TI con experiencia en desarrollo web y videojuegos. Me apasiona crear soluciones innovadoras y eficientes.",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "education": "Educación",
+        "contact": "Contacto"
+    },
+    "profile": {
+        "name": "Mario Flor Peñafiel",
+        "s3Note": "Esta imagen ha sido subida a S3",
+        "email": "mariofrancisco4d@gmail.com",
+        "aboutTitle": "Sobre mí",
+        "about": [
+            "Soy ingeniero en TI con amplia experiencia como desarrollador web desde 2020. Mi pasión por el desarrollo web me impulsa a aprender continuamente y explorar nuevas tecnologías, especialmente React.",
+            "Como programador autodidacta, siempre busco oportunidades para mejorar mis habilidades y asumir nuevos desafíos. Me desenvuelvo bien en entornos colaborativos y me enorgullezco de mi compromiso con el trabajo duro, siempre buscando obtener los mejores resultados.",
+            "Además del desarrollo web, también me interesa profundamente el desarrollo de videojuegos. Desde 2020 he estado perfeccionando mis habilidades en Unity y C# para crear experiencias digitales atractivas."
+        ],
+        "summaryTitle": "Resumen profesional",
+        "summary": "Ingeniero en TI con una sólida base en desarrollo de software y capacidad demostrada para diseñar, desarrollar e integrar soluciones complejas. Dominio de diversos lenguajes de programación y enfoque en entregar código optimizado. Deseo aplicar mis conocimientos para contribuir al éxito de una organización innovadora.",
+        "skillsTitle": "Habilidades",
+        "skills": [
+            "Desarrollo de software",
+            "C / C#",
+            "HTML / CSS",
+            "Especialista en JavaScript",
+            "Desarrollo de videojuegos (Unity, LOVE 2D)",
+            "React",
+            "Python",
+            "Flutter"
+        ],
+        "workTitle": "Experiencia laboral",
+        "educationTitle": "Educación",
+        "education": [
+            {
+                "title": "Alemán C1",
+                "place": "DID - Deutsch Institut, Frankfurt, Alemania",
+                "date": "18.03.2024 - 18.10.2024",
+                "description": "He completado exitosamente todos los niveles (A1-A2-B1-B2-C1) hasta alcanzar el dominio del idioma alemán. Durante el curso aprendí una amplia gama de temas relacionados con Alemania y adquirí habilidades para hablar, escuchar y escribir correctamente en el idioma."
+            },
+            {
+                "title": "Licenciatura en Tecnologías de la Información",
+                "place": "Universidad Yachay Tech, Imbabura, Ecuador",
+                "date": "2015 - 2021",
+                "description": [
+                    "Graduado con mención de honor, Cum Laude.",
+                    "Voluntario certificado en proyecto universitario, obteniendo el certificado: \"Participó en charlas y talleres sobre uso y divulgación de la tecnología.\""
+                ]
+            },
+            {
+                "title": "CS50’s Introducción a la Inteligencia Artificial con Python",
+                "place": "Universidad de Harvard",
+                "date": "2024",
+                "description": "Este curso explora los conceptos y algoritmos fundamentales de la inteligencia artificial moderna, incluyendo motores de juego, reconocimiento de escritura y traducción automática. Los estudiantes adquieren experiencia práctica con algoritmos de búsqueda, clasificación, aprendizaje automático y más."
+            },
+            {
+                "title": "CS50’s Introducción al Desarrollo de Videojuegos",
+                "place": "Universidad de Harvard",
+                "date": "2021",
+                "description": "Este curso se enfoca en el desarrollo de juegos 2D y 3D interactivos. A través de proyectos prácticos, los estudiantes exploran gráficos, animación, sonido y física usando motores como Unity y LOVE 2D, y lenguajes como Lua y C#."
+            }
+        ]
+    },
+    "emov": {
+        "position": "Analista de Aplicaciones Tecnológicas",
+        "tasks": [
+            "Investigó discrepancias en valores calculados por el sistema, identificando causas e implementando soluciones.",
+            "Colaboró en el desarrollo de un sistema integral para el cálculo, cobro y contabilidad de impuestos vehiculares.",
+            "Diseñó funciones fáciles de usar para la gestión del sistema, incluyendo opciones de cancelación, solicitud de documentos y reimpresiones.",
+            "Desarrolló un sistema para validar infracciones de velocidad utilizando radares en toda Cuenca, Ecuador.",
+            "Ejecutó consultas SQL complejas para obtener datos requeridos por la auditoría estatal.",
+            "Integró un servicio web externo para resolver infracciones de tránsito públicas."
+        ]
+    },
+    "libelula1": {
+        "position": "Desarrollador de Software Junior",
+        "tasks": [
+            "Integró un proveedor de pagos en sitios bancarios utilizando PHP, JavaScript, HTML y CSS, permitiendo a los usuarios pagar servicios como agua y seguros.",
+            "Migró múltiples plataformas bancarias a una nueva versión de PHP, mejorando seguridad, rendimiento y experiencia de usuario.",
+            "Optimizó y refactorizó más del 90% del código JavaScript para eliminar malas prácticas.",
+            "Desarrolló una interfaz web para facturación y deducción de impuestos usando JavaScript, HTML, CSS y base de datos NoSQL.",
+            "Identificó y resolvió errores críticos en varios sitios bancarios usando PHP, JavaScript, HTML y CSS."
+        ]
+    },
+    "webdit": {
+        "position": "Desarrollador Web",
+        "tasks": [
+            "Representó al equipo en reuniones con ejecutivos, comunicando objetivos y avances del proyecto.",
+            "Depuró código de plugins con JavaScript y desarrolló procedimientos de prueba eficaces.",
+            "Diseñó, implementó y mantuvo páginas web en un entorno ágil y de mejora continua.",
+            "Desarrolló diseños atractivos y funcionales para front-end y back-end en páginas web, correos electrónicos y plataformas de comercio electrónico."
+        ]
+    },
+    "libelula2": {
+        "position": "Desarrollador de Software",
+        "tasks": [
+            "Colaboró con un equipo de 3 personas para crear una interfaz de facturación conectada directamente al portal tributario.",
+            "Utilizó SQL para crear, actualizar bases de datos y almacenar archivos generados por el gobierno.",
+            "Diseñó y desarrolló reportes en SQL Server Reporting Services.",
+            "Realizó reuniones semanales con su gerente para presentar avances del proyecto.",
+            "Desarrolló un componente de escaneo implementado con SQL Server."
+        ]
+    },
+  "blog": {
+    "title": "Proyectos",
+    "instruction": "(haz clic en ellos para más información!)",
+    "posts": {
+      "website": {
+        "title": "¡Este sitio web! (React)",
+        "content": "¡Bienvenido a mi sitio web de portafolio! Este sitio está construido usando React y React Router, y utiliza AWS S3 para alojar algunos de los elementos. Presenta hermosas animaciones y transiciones CSS, y está diseñado para ser completamente responsivo y adaptarse a diferentes tamaños de pantalla. El código está optimizado para velocidad, asegurando que la página cargue rápidamente para los visitantes. En este sitio puedes encontrar algunos de mis proyectos y conocer más sobre mi formación profesional y habilidades. Continuaré agregando más proyectos y actualizaciones en el futuro. El código fuente de este sitio está disponible en GitHub para cualquiera que esté interesado. ¡Espero que disfrutes explorando mi sitio y conociendo más sobre mi trabajo. Gracias por visitar!"
+      },
+      "AI-Game": {
+        "title": "Agente de Inteligencia Artificial (Unity)",
+        "content": "Entrené una inteligencia artificial usando aprendizaje reforzado para que pudiera aprender a jugar un juego simple donde debía recolectar monedas evitando a un enemigo. A través del entrenamiento, la IA mejoró su habilidad hasta alcanzar la puntuación máxima. Puedes ver cómo aprende en el video adjunto. Este proyecto demuestra mis habilidades en el uso de IA y aprendizaje reforzado para resolver problemas y mejorar capacidades."
+      },
+      "jellygame": {
+        "title": "Juego CS50 Jelly (Unity)",
+        "content": "Este juego fue desarrollado como proyecto final del curso CS50G, impartido por Harvard. El juego (llamado CS50 Jelly) fue hecho en Unity. Es un juego de rompecabezas en el que se completan niveles moviendo una bola con el ratón, usando una mecánica parecida a Angry Birds. Al hacer clic derecho, la bola cambia de material, lo cual es necesario en algunos niveles. El juego consta de cinco niveles con dificultad progresiva y una experiencia cohesiva. Si la bola choca con pinchos o cae, se repite el nivel. Al terminar, aparece una pantalla de felicitación. También se pueden repetir niveles para obtener el puntaje perfecto (3 estrellas). Puedes descargarlo desde: https://github.com/me50/ObliMario"
+      },
+      "pacman": {
+        "title": "Juego Pacman (Unity)",
+        "content": "Presentamos PACMAN, el clásico arcade traído a la vida en Unity. Este proyecto es una recreación fiel del juego original, con el laberinto y fantasmas con comportamiento de IA auténtico. El mapa se genera dinámicamente leyendo un archivo .csv, permitiendo personalización. Incluye un sistema de puntajes altos que se guarda en un archivo .txt. El código fuente está en: https://github.com/ObliMario/PACMAN"
+      },
+      "evo": {
+        "title": "Juego de Evolución (Unity)",
+        "content": "¡Bienvenido a mi prototipo de juego! Aquí puedes crear y mezclar genes de dos animales para generar descendencia con características únicas. Los genes determinan el tamaño y color, y los hijos heredan rasgos de sus padres. El juego se basa en dinámicas reales de ADN, ofreciendo una experiencia educativa. A medida que mezclas genes, verás cómo evolucionan los animales. El juego sigue en desarrollo y planeo agregar más funciones."
+      },
+      "DSEncryption": {
+        "title": "Sistema de Encriptación con Sistemas Dinámicos (C)",
+        "content": "Presento mi tesis: una aplicación de software que implementa un método generalizado de encriptación y almacenamiento, diseñada para sistemas Linux-Ubuntu. Tiene una interfaz gráfica amigable usando Tkinter. Permite codificar y decodificar archivos usando una clave inicial 'x0'. Para ejecutarla, corre el código 'GUI.py'. El código está en GitHub: https://github.com/ObliMario/DS_EncryptionSystem. Estoy orgulloso de este proyecto que representa el esfuerzo y la investigación que realicé en criptografía y seguridad."
+      },
+      "quiz": {
+        "title": "Programa de Quiz (Python)",
+        "content": "¡Presento mi programa de cuestionarios! Permite crear y aplicar quizzes fácilmente usando un archivo .txt. Solo introduce los datos y el programa los leerá y mostrará. Lleva un registro de los aciertos y muestra resultados. Al final, muestra la puntuación y respuestas correctas. El código fuente está en: https://github.com/ObliMario/quiz ¡Gracias por revisar mi proyecto!"
+      },
+      "deutschapp": {
+        "title": "App de Alemán (Flutter)",
+        "content": "Esta app en Flutter ayuda a aprender alemán como lengua extranjera. En la sección 'Preposiciones' se muestran verbos comunes y sus preposiciones. Se pueden añadir nuevos verbos, reiniciar contenido, y practicar con un modelo de tarjetas. Muestra el verbo y luego las preposiciones, y al hacer clic muestra su significado. Desde el menú se puede buscar, modificar o eliminar combinaciones de verbo y preposición."
+      },
+      "arcgame": {
+        "title": "Arc (Unity VR)",
+        "content": "Este video muestra una demo de un juego VR en desarrollo en Unity 6. El jugador lanza un proyectil aplicando fuerza y ángulo, con posibilidad de corregir en vuelo usando las manos. Puede teletransportarse al punto de impacto y lanzar desde el mismo X y Z. El objetivo es activar todas las flores en el mapa. Caer al agua reinicia el nivel. Se planean cronómetro, contador de tiros y varios niveles temáticos. Está diseñado para ser una experiencia relajante pero desafiante."
+      }
+    }
+  }
 }

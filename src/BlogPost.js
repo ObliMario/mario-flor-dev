@@ -2,8 +2,10 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { posts } from "./blogdata";
 import YouTube from "react-youtube";
+import { useTranslation } from "react-i18next";
 
 function BlogPost() {
+  const { t } = useTranslation();
   const opts = {
     height: "390",
     width: "640",
@@ -27,8 +29,8 @@ function BlogPost() {
         Return to blog
       </button>
       <div className="container-data">
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
+        <h1>{t(`${post.i18nKey}.title`)}</h1>
+        <p>{t(`${post.i18nKey}.content`)}</p>
         {/* if post.image exists */}
         {post.image && (
           <div className="blogImg">
