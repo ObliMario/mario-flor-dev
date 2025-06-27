@@ -7,11 +7,16 @@ import { ProfilePage } from "./ProfilePage";
 import { Menu } from "./Menu";
 import { BlogPost } from "./BlogPost";
 
-function App() {
+// 🔁 Importa el selector de idioma
+import LanguageSwitcher from "./LanguageSwitcher";
 
+// 🔁 Asegúrate de importar i18n config
+import "./i18n";
+
+function App() {
   return (
     <HashRouter>
-      
+      <LanguageSwitcher /> {/* 🌐 Mostrar siempre el selector */}
       <Menu />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -19,7 +24,7 @@ function App() {
           <Route path=":slug" element={<BlogPost />} />
         </Route>
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="*" element={<p>Not found </p>} />
+        <Route path="*" element={<p>Not found</p>} />
       </Routes>
     </HashRouter>
   );
