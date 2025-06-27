@@ -10,11 +10,12 @@ function LanguageSwitcher() {
   };
 
   return (
-    <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1000 }}>
+    <div className="language-switcher">
       <button onClick={() => changeLanguage("de")}>DE</button>
       <button onClick={() => changeLanguage("en")}>EN</button>
       <button onClick={() => changeLanguage("es")}>ES</button>
     </div>
+
   );
 }
 
