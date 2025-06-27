@@ -4,7 +4,7 @@
         "intro": "My name is Mario and in this blog I want to share with you my projects and interests. I hope you can find something you like and enjoy your visit.",
         "more": "If you want to know more about me and my projects, you can click on the menu on the top-right corner. There you will find detailed information about my skills and experience, as well as links to my most notable works. \n If you have any questions or comments, don't hesitate to contact me. I am always open to new opportunities and connecting with interesting people.",
         "thanks": "Thank you for visiting my website!",
-        "contact": "If you want to get in touch, feel free to reach out through the contact form or my social media profiles.",
+        "contact": "If you want to get in touch, feel free to reach out through my social media profiles.",
         "signature": "Mario"
     },
     "menu": {
@@ -23,9 +23,10 @@
         "email": "mariofrancisco4d@gmail.com",
         "aboutTitle": "About Me",
         "about": [
-            "I am an IT engineer with extensive experience as a web developer since 2020. My passion for web development drives me to continuously learn and explore new technologies, particularly React.",
-            "As a self-taught programmer, I am always seeking opportunities to enhance my skills and embrace new challenges. I thrive in collaborative environments and take pride in my commitment to hard work, always striving to achieve the best results.",
-            "In addition to web development, I am also deeply interested in game development. Since 2020, I have been honing my skills in Unity and C# to create engaging digital experiences."
+            "Hello! I'm Mario, an IT engineer from Ecuador currently based in Germany. I graduated with honors in 2021 and have since built my career in web development and programming.",
+            "My passion for the web drives me to keep learning and exploring new tools, with a special interest in React. I also have a strong command of both German and English, written and spoken.",
+            "As a self-taught developer, I take advantage of every project to strengthen my knowledge and face challenges that help me grow professionally. I enjoy working in collaborative teams and take pride in my work ethic: committed, detail-oriented, and always focused on achieving the best results.",
+            "In addition to web development, since 2020 I've been dedicating time to game development using Unity and C#, aiming to create immersive digital experiences. I'm passionate about combining creativity and technology to bring innovative projects to life."
         ],
         "summaryTitle": "Professional Summary",
         "summary": "Accomplished IT Engineer with a strong foundation in software development and a demonstrated ability to design, develop, and integrate complex software solutions. Proficient in a wide range of programming languages, delivering optimized code for diverse applications. I am eager to apply my expertise to contribute to the success of a forward-thinking organization.",
@@ -73,43 +74,45 @@
         ]
     },
     "emov": {
-        "position": "Technological Application Analyst",
+        "position": "Technological Applications Analyst",
         "tasks": [
-            "Researched discrepancies in system-calculated values, identifying causes and implementing solutions.",
-            "Collaborated on developing a comprehensive system for vehicle tax calculation, collection, and accounting.",
-            "Designed user-friendly features for system management, including options for cancellations, document requests, and reprints.",
-            "Developed a system to validate speeding violations using radar devices throughout Cuenca, Ecuador.",
-            "Executed complex SQL queries to retrieve data required by the state auditor.",
-            "Integrated the web service of an external provider to resolve public traffic violation issues."
+            "Development, maintenance, and management of the company’s core system.",
+            "Bug fixing and updating of legacy systems to ensure stability.",
+            "Design, programming, and implementation of a complete system for vehicle tax calculation, collection, and accounting.",
+            "Execution of complex SQL queries, data analysis, and report generation for state auditors.",
+            "Linux system administration and deployment of web applications in production environments.",
+            "Collaboration with various departments to identify specific requirements and develop tailored solutions."
         ]
     },
     "libelula1": {
         "position": "Junior Software Developer",
         "tasks": [
-            "Integrated a payment provider into banking websites using PHP, JavaScript, HTML, and CSS, enabling users to pay for services such as utilities and insurance.",
-            "Migrated multiple transactional banking platforms to a new PHP version, enhancing security, performance, and user experience.",
-            "Optimized and refactored over 90% of JavaScript code to eliminate code 'smells', adhering to industry best practices.",
-            "Developed a web-based billing and tax deduction interface using JavaScript, HTML, CSS, and NoSQL database integration.",
-            "Identified and resolved critical bugs across various banking transactional websites using PHP, JavaScript, HTML, and CSS."
+            "Created transactional banking websites using PHP, JavaScript, HTML, and CSS.",
+            "Integrated a payment provider into banking portals to enable service transactions such as water and insurance.",
+            "Upgraded PHP versions in at least five banking platforms, improving security, performance, and compatibility.",
+            "Optimized source code (JavaScript and PHP) for efficient resource usage and greater scalability.",
+            "Developed a web interface for billing and tax management, supported by NoSQL databases.",
+            "Queried and managed NoSQL databases to support modern web applications.",
+            "Identified and resolved user claims and technical issues, ensuring stable operations."
         ]
     },
     "webdit": {
         "position": "Web Developer",
         "tasks": [
-            "Represented the team at meetings with executives and effectively communicated project goals and milestones.",
-            "Successfully debugged plugin code using JavaScript and developed effective test procedures.",
-            "Designed, implemented, and monitored web pages and sites for continuous improvement in a fast-paced environment.",
-            "Developed appealing, responsive, and user-friendly front and back end web designs for a range of projects, including websites, emails, landing pages, and e-commerce platforms."
+            "Represented the team in presentations to executives, reporting project goals and progress.",
+            "Debugged and optimized plugin code with JavaScript, establishing efficient testing procedures.",
+            "Designed, implemented, and maintained websites under agile methodologies, promoting continuous improvement.",
+            "Developed front-end and back-end solutions for websites, emails, and e-commerce platforms with attractive and functional designs."
         ]
     },
     "libelula2": {
         "position": "Software Developer",
         "tasks": [
-            "Collaborated effectively with a team of 3 to create a billing interface that connects directly to the tax government website.",
-            "Used SQL to create and update databases, and to store resulted government files.",
-            "Designed and developed reports in SQL Server Reporting Services.",
-            "Met with my manager on a weekly basis to provide detailed project reports and milestone updates.",
-            "Developed and implemented a scanning component using SQL Server."
+            "Collaborated in a team of three to create a billing interface integrated with the tax authority portal.",
+            "Managed databases with SQL: created, updated, and stored government files.",
+            "Designed and developed business reports using SQL Server Reporting Services.",
+            "Held weekly meetings with the project manager to present progress and adjust priorities.",
+            "Developed a document scanning component using SQL Server functionalities."
         ]
     },
     "blog": {
@@ -133,28 +136,24 @@
                 "content": "Introducing PACMAN, the classic arcade game brought to life in Unity! This project is a faithful recreation of the original game, featuring the iconic maze and ghosts with authentic AI behavior. The map is generated dynamically by reading a .csv file, which allows for easy customization and variation. In addition to the classic gameplay, this game also includes a high score system that saves the top scores to a .txt file and displays them within the game. You can check out the source code for this project on GitHub at the following link: https://github.com/ObliMario/PACMAN"
             },
             "evo": {
-                "title":"Evolution Game (Unity)",
-                "content":"Welcome to my game prototype! In this game, you can create and mix the genes of two different animals to create a new generation with unique characteristics. The genes of each animal determine their size and color, and the resulting offspring will inherit traits from their parents. This game is based on real DNA dynamics, providing an engaging and educational experience. As you experiment with different combinations of genes, you will see how the characteristics of the animals evolve and change. The game is still in development, but I hope to add more features and content in the future."
-  
+                "title": "Evolution Game (Unity)",
+                "content": "Welcome to my game prototype! In this game, you can create and mix the genes of two different animals to create a new generation with unique characteristics. The genes of each animal determine their size and color, and the resulting offspring will inherit traits from their parents. This game is based on real DNA dynamics, providing an engaging and educational experience. As you experiment with different combinations of genes, you will see how the characteristics of the animals evolve and change. The game is still in development, but I hope to add more features and content in the future."
             },
             "DSEncryption": {
-                "title":"Encryption System made with Dinamic Systems (C)",
-                "content":"Introducing my thesis project: a software application that implements a generalized encryption and storage method, designed to be used on computers with the Linux-Ubuntu operating system. The software features a user-friendly graphical interface built using the Tkinter package. This project allows users to easily encode and decode any digital file, using the initial conditions of 'x0' as the encryption keys. To run the app, simply execute the 'GUI.py' python code. You can find the source code for this project on GitHub at the following link: https://github.com/ObliMario/DS_EncryptionSystem. I am proud of this project as it represents the culmination of my research and hard work in the field of cryptography and data security. I hope this software proves useful and valuable to other users. Thank you for checking out my thesis project."
-  
+                "title": "Encryption System made with Dinamic Systems (C)",
+                "content": "Introducing my thesis project: a software application that implements a generalized encryption and storage method, designed to be used on computers with the Linux-Ubuntu operating system. The software features a user-friendly graphical interface built using the Tkinter package. This project allows users to easily encode and decode any digital file, using the initial conditions of 'x0' as the encryption keys. To run the app, simply execute the 'GUI.py' python code. You can find the source code for this project on GitHub at the following link: https://github.com/ObliMario/DS_EncryptionSystem. I am proud of this project as it represents the culmination of my research and hard work in the field of cryptography and data security. I hope this software proves useful and valuable to other users. Thank you for checking out my thesis project."
             },
             "quiz": {
-                "title":"Quiz Program (Python)",
-                "content":"Introducing my Quiz program! This program allows you to easily create and administer quizzes using a simple .txt file format. Simply enter the quiz data into the .txt file and the program will automatically read and display the questions and answers. As the user answers the questions, the program will track their score and provide feedback on their performance. At the end of the quiz, the user will receive their final score and can review the correct answers for any questions they may have gotten wrong. You can find the source code for this program on GitHub at the following link: https://github.com/ObliMario/quiz I hope you enjoy using my Quiz program and find it useful for creating and administering quizzes. Thank you for checking out my project!"
-  
+                "title": "Quiz Program (Python)",
+                "content": "Introducing my Quiz program! This program allows you to easily create and administer quizzes using a simple .txt file format. Simply enter the quiz data into the .txt file and the program will automatically read and display the questions and answers. As the user answers the questions, the program will track their score and provide feedback on their performance. At the end of the quiz, the user will receive their final score and can review the correct answers for any questions they may have gotten wrong. You can find the source code for this program on GitHub at the following link: https://github.com/ObliMario/quiz I hope you enjoy using my Quiz program and find it useful for creating and administering quizzes. Thank you for checking out my project!"
             },
             "deutschapp": {
-                "title":"Deutsch App (Flutter)",
-                "content":"This app is developed in Flutter and is designed to help users learn German as a foreign language. In the 'Prepositions' section, a list of verbs with their most common prepositions is displayed. It also allows you to add new verbs, new prepositions, and reset the content to its initial state. When you open the practice screen, the verbs to study are shown. The app follows a flashcard model: it only shows the verb and asks you to think of the prepositions that go with it. By pressing 'Reveal prepositions,' the correct prepositions associated with the verb are displayed. When you tap on the card with the preposition, the meaning of the verb with that preposition is shown. From the verbs menu, you can search, modify, add, and delete any verb-preposition combination."
-  
+                "title": "Deutsch App (Flutter)",
+                "content": "This app is developed in Flutter and is designed to help users learn German as a foreign language. In the 'Prepositions' section, a list of verbs with their most common prepositions is displayed. It also allows you to add new verbs, new prepositions, and reset the content to its initial state. When you open the practice screen, the verbs to study are shown. The app follows a flashcard model: it only shows the verb and asks you to think of the prepositions that go with it. By pressing 'Reveal prepositions,' the correct prepositions associated with the verb are displayed. When you tap on the card with the preposition, the meaning of the verb with that preposition is shown. From the verbs menu, you can search, modify, add, and delete any verb-preposition combination."
             },
             "arcgame": {
-                "title":"Arc (Unity VR)",
-                "content":"This video showcases a demo of a VR game currently in development using Unity 6. The game challenges players to launch a projectile by applying an initial force and angle. A second hit can be applied mid-flight, guided by hand position, to correct its trajectory. Players can teleport to the ball’s location and are required to launch it again from the same X and Z coordinates—though the launch height remains flexible. The main objective is to activate all the flowers distributed throughout the map. Falling into water resets the player to the starting point, adding a light layer of challenge. Planned features include a timer and shot counter to enable leaderboard rankings, as well as multiple themed levels. Designed as a calm yet engaging experience, this game allows players to relax and enjoy the environment while honing their aiming skills."
+                "title": "Arc (Unity VR)",
+                "content": "This video showcases a demo of a VR game currently in development using Unity 6. The game challenges players to launch a projectile by applying an initial force and angle. A second hit can be applied mid-flight, guided by hand position, to correct its trajectory. Players can teleport to the ball’s location and are required to launch it again from the same X and Z coordinates—though the launch height remains flexible. The main objective is to activate all the flowers distributed throughout the map. Falling into water resets the player to the starting point, adding a light layer of challenge. Planned features include a timer and shot counter to enable leaderboard rankings, as well as multiple themed levels. Designed as a calm yet engaging experience, this game allows players to relax and enjoy the environment while honing their aiming skills."
             }
         }
     }

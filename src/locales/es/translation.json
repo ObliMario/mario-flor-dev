@@ -1,126 +1,132 @@
 {
-    "home": {
-        "title": "Bienvenido a mi sitio web personal.",
-        "intro": "Mi nombre es Mario y en este blog quiero compartir contigo mis proyectos e intereses. Espero que encuentres algo que te guste y disfrutes tu visita.",
-        "more": "Si quieres saber más sobre mí y mis proyectos, puedes hacer clic en el menú en la esquina superior derecha. Allí encontrarás información detallada sobre mis habilidades y experiencia, así como enlaces a mis trabajos más destacados.\nSi tienes alguna pregunta o comentario, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y a conectar con personas interesantes.",
-        "thanks": "¡Gracias por visitar mi sitio web!",
-        "contact": "Si quieres ponerte en contacto, no dudes en escribirme a través del formulario de contacto o por mis redes sociales.",
-        "signature": "Mario"
-    },
-    "menu": {
-        "home": "Inicio",
-        "projects": "Proyectos",
-        "profile": "Perfil"
-    },
-    "leftBar": {
-        "title": "Ingeniero en TI",
-        "webdev": "Desarrollador Web",
-        "gamedev": "Desarrollador de Videojuegos"
-    },
-    "profile": {
-        "title": "Perfil",
-        "subtitle": "Sobre mí",
-        "description": "Soy un ingeniero en TI con experiencia en desarrollo web y videojuegos. Me apasiona crear soluciones innovadoras y eficientes.",
-        "skills": "Habilidades",
-        "experience": "Experiencia",
-        "education": "Educación",
-        "contact": "Contacto"
-    },
-    "profile": {
-        "name": "Mario Flor Peñafiel",
-        "s3Note": "Esta imagen ha sido subida a S3",
-        "email": "mariofrancisco4d@gmail.com",
-        "aboutTitle": "Sobre mí",
-        "about": [
-            "Soy ingeniero en TI con amplia experiencia como desarrollador web desde 2020. Mi pasión por el desarrollo web me impulsa a aprender continuamente y explorar nuevas tecnologías, especialmente React.",
-            "Como programador autodidacta, siempre busco oportunidades para mejorar mis habilidades y asumir nuevos desafíos. Me desenvuelvo bien en entornos colaborativos y me enorgullezco de mi compromiso con el trabajo duro, siempre buscando obtener los mejores resultados.",
-            "Además del desarrollo web, también me interesa profundamente el desarrollo de videojuegos. Desde 2020 he estado perfeccionando mis habilidades en Unity y C# para crear experiencias digitales atractivas."
-        ],
-        "summaryTitle": "Resumen profesional",
-        "summary": "Ingeniero en TI con una sólida base en desarrollo de software y capacidad demostrada para diseñar, desarrollar e integrar soluciones complejas. Dominio de diversos lenguajes de programación y enfoque en entregar código optimizado. Deseo aplicar mis conocimientos para contribuir al éxito de una organización innovadora.",
-        "skillsTitle": "Habilidades",
-        "skills": [
-            "Desarrollo de software",
-            "C / C#",
-            "HTML / CSS",
-            "Especialista en JavaScript",
-            "Desarrollo de videojuegos (Unity, LOVE 2D)",
-            "React",
-            "Python",
-            "Flutter"
-        ],
-        "workTitle": "Experiencia laboral",
-        "educationTitle": "Educación",
-        "education": [
-            {
-                "title": "Alemán C1",
-                "place": "DID - Deutsch Institut, Frankfurt, Alemania",
-                "date": "18.03.2024 - 18.10.2024",
-                "description": "He completado exitosamente todos los niveles (A1-A2-B1-B2-C1) hasta alcanzar el dominio del idioma alemán. Durante el curso aprendí una amplia gama de temas relacionados con Alemania y adquirí habilidades para hablar, escuchar y escribir correctamente en el idioma."
-            },
-            {
-                "title": "Licenciatura en Tecnologías de la Información",
-                "place": "Universidad Yachay Tech, Imbabura, Ecuador",
-                "date": "2015 - 2021",
-                "description": [
-                    "Graduado con mención de honor, Cum Laude.",
-                    "Voluntario certificado en proyecto universitario, obteniendo el certificado: \"Participó en charlas y talleres sobre uso y divulgación de la tecnología.\""
-                ]
-            },
-            {
-                "title": "CS50’s Introducción a la Inteligencia Artificial con Python",
-                "place": "Universidad de Harvard",
-                "date": "2024",
-                "description": "Este curso explora los conceptos y algoritmos fundamentales de la inteligencia artificial moderna, incluyendo motores de juego, reconocimiento de escritura y traducción automática. Los estudiantes adquieren experiencia práctica con algoritmos de búsqueda, clasificación, aprendizaje automático y más."
-            },
-            {
-                "title": "CS50’s Introducción al Desarrollo de Videojuegos",
-                "place": "Universidad de Harvard",
-                "date": "2021",
-                "description": "Este curso se enfoca en el desarrollo de juegos 2D y 3D interactivos. A través de proyectos prácticos, los estudiantes exploran gráficos, animación, sonido y física usando motores como Unity y LOVE 2D, y lenguajes como Lua y C#."
-            }
+  "home": {
+    "title": "Bienvenido a mi sitio web personal.",
+    "intro": "Mi nombre es Mario y en este blog quiero compartir contigo mis proyectos e intereses. Espero que encuentres algo que te guste y disfrutes tu visita.",
+    "more": "Si quieres saber más sobre mí y mis proyectos, puedes hacer clic en el menú en la esquina superior derecha. Allí encontrarás información detallada sobre mis habilidades y experiencia, así como enlaces a mis trabajos más destacados.\nSi tienes alguna pregunta o comentario, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y a conectar con personas interesantes.",
+    "thanks": "¡Gracias por visitar mi sitio web!",
+    "contact": "Si quieres ponerte en contacto, no dudes en escribirme por mis redes sociales.",
+    "signature": "Mario"
+  },
+  "menu": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "profile": "Perfil"
+  },
+  "leftBar": {
+    "title": "Ingeniero en TI",
+    "webdev": "Desarrollador Web",
+    "gamedev": "Desarrollador de Videojuegos"
+  },
+  "profile": {
+    "title": "Perfil",
+    "subtitle": "Sobre mí",
+    "description": "Soy un ingeniero en TI con experiencia en desarrollo web y videojuegos. Me apasiona crear soluciones innovadoras y eficientes.",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "profile": {
+    "name": "Mario Flor Peñafiel",
+    "s3Note": "Esta imagen ha sido subida a S3",
+    "email": "mariofrancisco4d@gmail.com",
+    "aboutTitle": "Sobre mí",
+    "about": [
+      "¡Hola! Soy Mario, un ingeniero en tecnologías de la información ecuatoriano afincado en Alemania. Me gradué en 2021 con honores y desde entonces he forjado mi carrera en el mundo del desarrollo web y la programación.",
+      "Mi pasión por la web me lleva a aprender de forma continua y a explorar nuevas herramientas, con especial interés en React. Asimismo, cuento con un buen nivel de alemán e inglés, tanto escrito como hablado. ",
+      "Como autodidacta, aprovecho cada proyecto para reforzar conocimientos y asumir desafíos que me permitan crecer profesionalmente. Disfruto trabajando en equipos colaborativos y me enorgullezco de mi ética de trabajo: comprometido, meticuloso y orientado siempre a lograr los mejores resultados.",
+      "Además del desarrollo web, desde 2020 dedico tiempo al desarrollo de videojuegos con Unity y C#, buscando crear experiencias digitales envolventes. Me entusiasma combinar creatividad y tecnología para dar vida a proyectos innovadores."
+    ],
+    "summaryTitle": "Resumen profesional",
+    "summary": "Ingeniero en TI con una sólida base en desarrollo de software y capacidad demostrada para diseñar, desarrollar e integrar soluciones complejas. Dominio de diversos lenguajes de programación y enfoque en entregar código optimizado. Deseo aplicar mis conocimientos para contribuir al éxito de una organización innovadora.",
+    "skillsTitle": "Habilidades",
+    "skills": [
+      "Desarrollo de software",
+      "C / C#",
+      "HTML / CSS",
+      "JavaScript",
+      "Desarrollo de videojuegos (Unity, LOVE 2D)",
+      "React",
+      "Python",
+      "Flutter"
+    ],
+    "workTitle": "Experiencia laboral",
+    "educationTitle": "Educación",
+    "education": [
+      {
+        "title": "Alemán C1",
+        "place": "DID - Deutsch Institut, Frankfurt, Alemania",
+        "date": "18.03.2024 - 18.10.2024",
+        "description": "He completado exitosamente todos los niveles (A1-A2-B1-B2-C1) hasta alcanzar el dominio del idioma alemán. Durante el curso aprendí una amplia gama de temas relacionados con Alemania y adquirí habilidades para hablar, escuchar y escribir correctamente en el idioma."
+      },
+      {
+        "title": "Licenciatura en Tecnologías de la Información",
+        "place": "Universidad Yachay Tech, Imbabura, Ecuador",
+        "date": "2015 - 2021",
+        "description": [
+          "Graduado con mención de honor, Cum Laude.",
+          "Voluntario certificado en proyecto universitario, obteniendo el certificado: \"Participó en charlas y talleres sobre uso y divulgación de la tecnología.\""
         ]
-    },
-    "emov": {
-        "position": "Analista de Aplicaciones Tecnológicas",
-        "tasks": [
-            "Investigó discrepancias en valores calculados por el sistema, identificando causas e implementando soluciones.",
-            "Colaboró en el desarrollo de un sistema integral para el cálculo, cobro y contabilidad de impuestos vehiculares.",
-            "Diseñó funciones fáciles de usar para la gestión del sistema, incluyendo opciones de cancelación, solicitud de documentos y reimpresiones.",
-            "Desarrolló un sistema para validar infracciones de velocidad utilizando radares en toda Cuenca, Ecuador.",
-            "Ejecutó consultas SQL complejas para obtener datos requeridos por la auditoría estatal.",
-            "Integró un servicio web externo para resolver infracciones de tránsito públicas."
-        ]
-    },
-    "libelula1": {
-        "position": "Desarrollador de Software Junior",
-        "tasks": [
-            "Integró un proveedor de pagos en sitios bancarios utilizando PHP, JavaScript, HTML y CSS, permitiendo a los usuarios pagar servicios como agua y seguros.",
-            "Migró múltiples plataformas bancarias a una nueva versión de PHP, mejorando seguridad, rendimiento y experiencia de usuario.",
-            "Optimizó y refactorizó más del 90% del código JavaScript para eliminar malas prácticas.",
-            "Desarrolló una interfaz web para facturación y deducción de impuestos usando JavaScript, HTML, CSS y base de datos NoSQL.",
-            "Identificó y resolvió errores críticos en varios sitios bancarios usando PHP, JavaScript, HTML y CSS."
-        ]
-    },
-    "webdit": {
-        "position": "Desarrollador Web",
-        "tasks": [
-            "Representó al equipo en reuniones con ejecutivos, comunicando objetivos y avances del proyecto.",
-            "Depuró código de plugins con JavaScript y desarrolló procedimientos de prueba eficaces.",
-            "Diseñó, implementó y mantuvo páginas web en un entorno ágil y de mejora continua.",
-            "Desarrolló diseños atractivos y funcionales para front-end y back-end en páginas web, correos electrónicos y plataformas de comercio electrónico."
-        ]
-    },
-    "libelula2": {
-        "position": "Desarrollador de Software",
-        "tasks": [
-            "Colaboró con un equipo de 3 personas para crear una interfaz de facturación conectada directamente al portal tributario.",
-            "Utilizó SQL para crear, actualizar bases de datos y almacenar archivos generados por el gobierno.",
-            "Diseñó y desarrolló reportes en SQL Server Reporting Services.",
-            "Realizó reuniones semanales con su gerente para presentar avances del proyecto.",
-            "Desarrolló un componente de escaneo implementado con SQL Server."
-        ]
-    },
+      },
+      {
+        "title": "CS50’s Introducción a la Inteligencia Artificial con Python",
+        "place": "Universidad de Harvard",
+        "date": "2024",
+        "description": "Este curso explora los conceptos y algoritmos fundamentales de la inteligencia artificial moderna, incluyendo motores de juego, reconocimiento de escritura y traducción automática. Los estudiantes adquieren experiencia práctica con algoritmos de búsqueda, clasificación, aprendizaje automático y más."
+      },
+      {
+        "title": "CS50’s Introducción al Desarrollo de Videojuegos",
+        "place": "Universidad de Harvard",
+        "date": "2021",
+        "description": "Este curso se enfoca en el desarrollo de juegos 2D y 3D interactivos. A través de proyectos prácticos, los estudiantes exploran gráficos, animación, sonido y física usando motores como Unity y LOVE 2D, y lenguajes como Lua y C#."
+      }
+    ]
+  },
+  
+  "emov": {
+    "position": "Analista de Aplicaciones Tecnológicas",
+    "tasks": [
+      "Desarrollo, mantenimiento y gestión del sistema central de la empresa.",
+      "Solución de errores y actualización de sistemas heredados para garantizar la estabilidad del sistema.",
+      "Diseño, programación e implementación de un sistema completo para cálculo, recaudación y contabilidad de impuestos vehiculares.",
+      "Ejecución de consultas SQL complejas, análisis de datos y generación de informes para auditores estatales.",
+      "Administración de sistemas Linux y despliegue de aplicaciones web en entornos productivos.",
+      "Colaboración con diversas áreas de la organización para identificar requisitos específicos y desarrollar soluciones a medida."
+    ]
+  },
+  "libelula1": {
+    "position": "Desarrollador de Software Junior",
+    "tasks": [
+      "Creación de sitios bancarios transaccionales utilizando PHP, JavaScript, HTML y CSS.",
+      "Integración de un proveedor de pagos en portales bancarios para habilitar transacciones de servicios como agua y seguros.",
+      "Actualización de la versión de PHP en al menos cinco plataformas bancarias, mejorando la seguridad, el rendimiento y la compatibilidad.",
+      "Optimización del código fuente (JavaScript y PHP) para un uso eficiente de recursos y mayor escalabilidad.",
+      "Desarrollo de una interfaz web para facturación y gestión de impuestos, apoyada en bases de datos NoSQL.",
+      "Consultas y gestión de bases de datos NoSQL para soportar aplicaciones web modernas.",
+      "Identificación y resolución de reclamaciones de usuarios y fallos técnicos, garantizando un funcionamiento estable."
+    ]
+  },
+  "webdit": {
+    "position": "Desarrollador Web",
+    "tasks": [
+      "Representé al equipo en presentaciones ante ejecutivos, reportando objetivos y avances del proyecto.",
+      "Depuré y optimicé código de plugins con JavaScript, estableciendo procedimientos de prueba eficientes.",
+      "Diseñé, implementé y mantuve páginas web bajo metodologías ágiles, fomentando la mejora continua.",
+      "Desarrollé soluciones front-end y back-end para sitios web, correos electrónicos y plataformas de e-commerce con diseños atractivos y funcionales."
+    ]
+  },
+  "libelula2": {
+    "position": "Desarrollador de Software",
+    "tasks": [
+      "Colaboré en un equipo de tres para crear una interfaz de facturación integrada al portal tributario.",
+      "Administré bases de datos con SQL: creación, actualización y almacenamiento de archivos gubernamentales.",
+      "Diseñé y elaboré reportes de negocio con SQL Server Reporting Services.",
+      "Realicé reuniones semanales con el gerente de proyecto para presentar avances y ajustar prioridades.",
+      "Desarrollé un componente de escaneo de documentos utilizando funcionalidades de SQL Server."
+    ]
+  },
+
+
   "blog": {
     "title": "Proyectos",
     "instruction": "(haz clic en ellos para más información!)",

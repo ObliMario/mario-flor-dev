@@ -13,7 +13,7 @@ function ProfilePage() {
 
       <div className="profilePic">
         <img
-          src="https://marioflordev.s3.us-west-2.amazonaws.com/cdimage+(3).jfif"
+          src="https://marioflordev.s3.us-west-2.amazonaws.com/cvImage.jpeg"
           alt="ProfilePicture"
           width="200"
         />

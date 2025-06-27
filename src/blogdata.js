@@ -7,35 +7,41 @@ posts.push({
   slug: "website",
   imgcss: "App-logo",
   image: logo,
+  category: ["React"],
 });
 posts.push({
   i18nKey: "blog.posts.AI-Game",
   slug: "AI-Game",
   YTlink: "https://youtu.be/hoGYSWDP73g",
   YTID: "hoGYSWDP73g",
+  category: ["Unity / C#", "AI"],
 });
 posts.push({
   i18nKey: "blog.posts.jellygame",
   slug: "jellygame",
   YTlink: "https://youtu.be/pBdRLonhN_k",
   YTID: "pBdRLonhN_k",
+  category: ["Unity / C#"],
 });
 posts.push({
   i18nKey: "blog.posts.pacman",
   slug: "pacman",
   YTlink: "https://youtu.be/p_NJqCJ2Fts",
   YTID: "p_NJqCJ2Fts",
+  category: ["Unity / C#"],
 });
 posts.push({
   i18nKey: "blog.posts.evo",
   slug: "evo",
   YTlink: "https://youtu.be/7uEtePL5Ci4",
   YTID: "7uEtePL5Ci4",
+  category: ["Unity / C#"],
 });
 posts.push({
   i18nKey: "blog.posts.DSEncryption",
   slug: "DSEncryption",
   image: "https://marioflordev.s3.us-west-2.amazonaws.com/DSE.png",
+  category: ["C"]
 });
 
 posts.push({
@@ -43,6 +49,7 @@ posts.push({
   slug: "quiz",
   YTlink: "https://youtu.be/bEyFS7pfzKg",
   YTID: "bEyFS7pfzKg",
+  category: ["Python", "Mobile App"],
 });
 
 posts.push({
@@ -50,13 +57,15 @@ posts.push({
   slug: "deutschapp",
   YTlink: "https://youtu.be/-pZRJMEHaOQ",
   YTID: "-pZRJMEHaOQ",
+  category: ["Flutter / Dart", "Mobile App"],
 });
 posts.push({
-  
+
   i18nKey: "blog.posts.arcgame",
   slug: "arcgame",
   YTlink: "https://youtu.be/LgjPBEiC-i4",
   YTID: "LgjPBEiC-i4",
+  category: ["Unity / C#", "VR"],
 });
 
 
