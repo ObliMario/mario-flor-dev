@@ -61,10 +61,10 @@ posts.push({
 });
 posts.push({
 
-  i18nKey: "blog.posts.arcgame",
-  slug: "arcgame",
-  YTlink: "https://youtu.be/LgjPBEiC-i4",
-  YTID: "LgjPBEiC-i4",
+  i18nKey: "blog.posts.florgame",
+  slug: "florgame-vr",
+  YTlink: "https://youtu.be/SywrReqCmrA",
+  YTID: "SywrReqCmrA",
   category: ["Unity / C#", "VR"],
 });
 

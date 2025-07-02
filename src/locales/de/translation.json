@@ -151,8 +151,8 @@
         "title": "Deutsch App",
         "content": "Diese App wurde mit Flutter entwickelt und hilft beim Deutschlernen als Fremdsprache. In der Rubrik 'Präpositionen' werden Verben mit ihren üblichen Präpositionen angezeigt. Du kannst neue Einträge hinzufügen oder den Inhalt zurücksetzen. Beim Üben wird nur das Verb gezeigt, und du sollst die passenden Präpositionen erraten. Nach dem Aufdecken erscheint die Bedeutung. Verwalten kannst du alles über das Menü: suchen, bearbeiten, löschen."
       },
-      "arcgame": {
-        "title": "Arc (VR)",
+      "florgame": {
+        "title": "FlorGame VR (Unity VR)",
         "content": "Dieses Video zeigt eine Demo eines VR-Spiels, das derzeit mit Unity 6 entwickelt wird. Ziel ist es, ein Projektil mit bestimmter Kraft und Winkel abzufeuern. Während des Flugs kann man es per Handbewegung korrigieren. Man kann sich zum Ball teleportieren und erneut starten (X/Z-Koordinaten bleiben gleich). Ziel ist es, alle Blumen auf der Karte zu aktivieren. Fällt man ins Wasser, startet man neu. Geplant sind: Timer, Schusszähler und verschiedene Level. Ein ruhiges, aber spannendes Erlebnis!"
       }
     }
