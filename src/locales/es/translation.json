@@ -82,7 +82,6 @@
       }
     ]
   },
-  
   "emov": {
     "position": "Analista de Aplicaciones Tecnológicas",
     "tasks": [
@@ -125,8 +124,6 @@
       "Desarrollé un componente de escaneo de documentos utilizando funcionalidades de SQL Server."
     ]
   },
-
-
   "blog": {
     "title": "Proyectos",
     "instruction": "(haz clic en ellos para más información!)",
@@ -166,6 +163,10 @@
       "florgame": {
         "title": "FlorGame VR (Unity VR)",
         "content": "Este video muestra una demo de un juego VR en desarrollo en Unity 6. El jugador lanza un proyectil aplicando fuerza y ángulo, con posibilidad de corregir en vuelo usando las manos. Puede teletransportarse al punto de impacto y lanzar desde el mismo X y Z. El objetivo es activar todas las flores en el mapa. Caer al agua reinicia el nivel. Se planean cronómetro, contador de tiros y varios niveles temáticos. Está diseñado para ser una experiencia relajante pero desafiante."
+      },
+      "warehouse": {
+        "title": "Proyecto Warehouse SQL",
+        "content": "Este proyecto implementa un Data Warehouse SQL completo con una arquitectura modular de tres capas (Bronce, Plata y Oro). Su objetivo es consolidar, limpiar y modelar datos CRM y ERP en una estructura confiable y lista para análisis. Incluye procesos de ingesta, transformación y almacenamiento de datos, asegurando que la información sea accesible para informes y análisis. La arquitectura permite escalabilidad y flexibilidad, adecuada para diversas fuentes de datos y requisitos empresariales. El código fuente está disponible en GitHub para quienes deseen explorar los detalles de implementación. Enlace al repositorio de GitHub: https://github.com/ObliMario/sql-data-warehause-project.git"
       }
     }
   }

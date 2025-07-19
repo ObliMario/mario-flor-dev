@@ -46,6 +46,15 @@ function BlogPost() {
             </a>
           </div>
         )}
+        {/* if post.linkGithub exists */}
+        {post.linkGithub && (
+          <div className="blogImg">
+            <a href={post.linkGithub} target="_blank" rel="noreferrer">
+              Link to the project on Github
+            </a>
+          </div>
+        )}
+        {/* if post.linkWeb exists */}
       </div>
     </div>
   );

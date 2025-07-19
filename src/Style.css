@@ -28,6 +28,32 @@ a {
   }
 }
 
+/* 1) El contenedor general de datos no debe tener max-width */
+.container-data {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+/* 2) El wrapper de imagen igual a ancho completo */
+.blogImg {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+/* 3) Y la propia imagen sin límites */
+.Warehouse-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+
 .App-header {
   background-color: var(--color-primary-dark-fade);
   display: flex;

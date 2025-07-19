@@ -29,6 +29,7 @@ posts.push({
   YTlink: "https://youtu.be/p_NJqCJ2Fts",
   YTID: "p_NJqCJ2Fts",
   category: ["Unity / C#"],
+  linkGithub: "https://github.com/ObliMario/PACMAN.git",
 });
 posts.push({
   i18nKey: "blog.posts.evo",
@@ -41,7 +42,8 @@ posts.push({
   i18nKey: "blog.posts.DSEncryption",
   slug: "DSEncryption",
   image: "https://marioflordev.s3.us-west-2.amazonaws.com/DSE.png",
-  category: ["C"]
+  category: ["C"],
+  linkGithub: "https://github.com/ObliMario/DS_EncryptionSystem.git",
 });
 
 posts.push({
@@ -66,6 +68,15 @@ posts.push({
   YTlink: "https://youtu.be/SywrReqCmrA",
   YTID: "SywrReqCmrA",
   category: ["Unity / C#", "VR"],
+});
+posts.push({
+
+  i18nKey: "blog.posts.warehouse",
+  slug: "warehouse-SQL",
+  image: "https://marioflordev.s3.us-west-2.amazonaws.com/High+Level+Architecture.png",
+  category: ["Data Engineering", "SQL"],
+  imgcss: "Warehouse-image",
+  linkGithub: "https://github.com/ObliMario/sql-data-warehause-project.git",
 });
 
 

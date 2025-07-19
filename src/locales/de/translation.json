@@ -154,6 +154,10 @@
       "florgame": {
         "title": "FlorGame VR (Unity VR)",
         "content": "Dieses Video zeigt eine Demo eines VR-Spiels, das derzeit mit Unity 6 entwickelt wird. Ziel ist es, ein Projektil mit bestimmter Kraft und Winkel abzufeuern. Während des Flugs kann man es per Handbewegung korrigieren. Man kann sich zum Ball teleportieren und erneut starten (X/Z-Koordinaten bleiben gleich). Ziel ist es, alle Blumen auf der Karte zu aktivieren. Fällt man ins Wasser, startet man neu. Geplant sind: Timer, Schusszähler und verschiedene Level. Ein ruhiges, aber spannendes Erlebnis!"
+      },
+      "warehouse": {
+        "title": "SQL Warehouse Project",
+        "content": "Dieses Projekt implementiert ein komplettes SQL-basiertes Data Warehouse mit einer modularen Drei-Schichten-Architektur (Bronze, Silver und Gold). Ziel ist es, Rohdaten aus CRM und ERP zu konsolidieren, zu bereinigen und in eine zuverlässige, analysebereite Struktur zu modellieren. Das Projekt umfasst Datenaufnahme, -transformation und -speicherung, um die Daten für Berichterstattung und Analyse zugänglich zu machen. Die Architektur ermöglicht Skalierbarkeit und Flexibilität, geeignet für verschiedene Datenquellen und Geschäftsanforderungen. Der Quellcode ist auf GitHub verfügbar: https://github.com/ObliMario/sql-data-warehause-project.git"  
       }
     }
   }
