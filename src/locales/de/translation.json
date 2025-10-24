@@ -1,11 +1,65 @@
 {
+  "tech": {
+    "unity": "Unity",
+    "csharp": "C#",
+    "js": "JS",
+    "canvas": "Canvas",
+    "vr": "VR"
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Eine Sammlung meiner Arbeiten und Experimente",
+    "filters": {
+      "all": "Alle",
+      "search": "Projekte durchsuchen...",
+      "newest": "Neueste",
+      "oldest": "Älteste",
+      "alphabetical": "A–Z"
+    },
+    "empty": {
+      "title": "Keine Projekte gefunden",
+      "description": "Versuche andere Filter oder Suchbegriffe.",
+      "reset": "Alle anzeigen"
+    },
+    "buttons": {
+      "viewDemo": "Demo ansehen",
+      "viewGitHub": "Auf GitHub ansehen"
+    }
+  },
   "home": {
     "title": "Willkommen auf meiner persönlichen Website.",
     "intro": "Mein Name ist Mario und in diesem Blog möchte ich meine Projekte und Interessen mit Ihnen teilen. Ich hoffe, Sie finden etwas, das Ihnen gefällt, und genießen Ihren Besuch.",
     "more": "Wenn Sie mehr über mich und meine Projekte erfahren möchten, können Sie auf das Menü oben rechts klicken. Dort finden Sie detaillierte Informationen über meine Fähigkeiten und Erfahrungen sowie Links zu meinen wichtigsten Arbeiten.\nWenn Sie Fragen oder Kommentare haben, zögern Sie bitte nicht, mich zu kontaktieren. Ich bin stets offen für neue Möglichkeiten und den Austausch mit interessanten Menschen.",
     "thanks": "Danke für Ihren Besuch auf meiner Website!",
     "contact": "Wenn Sie mit mir in Kontakt treten möchten, nutzen Sie gerne meine Social-Media-Profile.",
-    "signature": "Mario"
+    "signature": "Mario",
+    "hero": {
+      "eyebrow": "IT-Ingenieur & Webentwickler",
+      "title": "Hallo, ich bin",
+      "name": "Mario Flor",
+      "subtitle": "Ich baue performante, moderne Web-Erlebnisse mit React und einem Fokus auf saubere Architektur, Animationen und gute UX.",
+      "buttonProjects": "Projekte ansehen",
+      "buttonAbout": "Über mich",
+      "techLabel": "Technologien"
+    },
+    "featured": {
+      "title": "Ausgewählte Projekte",
+      "projects": {
+        "ai": {
+          "title": "Künstliche Intelligenz Agent",
+          "desc": "KI trainiert zum Sammeln von Münzen und Vermeiden von Feinden."
+        },
+        "jelly": {
+          "title": "CS50 Jelly Spiel",
+          "desc": "Puzzle-Spiel im Angry Birds Stil mit 5 Leveln."
+        },
+        "vr": {
+          "title": "FlorGame VR",
+          "desc": "VR-Spiel mit Projektilen zum Aktivieren von Blumen."
+        }
+      },
+      "cta": "Mehr erfahren →"
+    }
   },
   "menu": {
     "home": "Startseite",
@@ -121,42 +175,52 @@
     "posts": {
       "website": {
         "title": "Diese Website!",
+        "description": "Eine persönliche Portfolio-Website, erstellt mit React.",
         "content": "Willkommen auf meiner Portfolio-Website! Diese Seite wurde mit React und React Router erstellt und nutzt AWS S3 zum Hosten einiger Elemente. Sie enthält schöne CSS-Animationen und Übergänge und ist vollständig responsiv, um sich an verschiedene Bildschirmgrößen anzupassen. Der Code ist auf Geschwindigkeit optimiert, um schnelle Ladezeiten zu gewährleisten. Hier findest du einige meiner Projekte und erfährst mehr über meinen beruflichen Werdegang und meine Fähigkeiten. Ich werde in Zukunft weitere Projekte und Updates hinzufügen. Der Quellcode ist auf GitHub verfügbar. Viel Spaß beim Erkunden meiner Website und danke für deinen Besuch!"
       },
       "AI-Game": {
         "title": "Künstliche Intelligenz Agent",
+        "description": "KI trainiert, um ein einfaches Spiel zu spielen.",
         "content": "Ich habe eine künstliche Intelligenz mithilfe von verstärktem Lernen trainiert, damit sie ein einfaches Spiel spielen kann, in dem sie Münzen sammeln und einem Gegner ausweichen muss. Durch das Training verbesserte sich die KI, bis sie die Höchstpunktzahl erreichte. In einem beigefügten Video kannst du sehen, wie die KI lernt. Dieses Projekt zeigt meine Fähigkeiten im Einsatz von KI und verstärktem Lernen zur Problemlösung und Leistungsverbesserung."
       },
       "jellygame": {
         "title": "CS50 Jelly Spiel",
+        "description": "Ein physikbasiertes Puzzle-Spiel, entwickelt für CS50G.",
         "content": "Dieses Spiel wurde als Abschlussprojekt des CS50G-Kurses der Harvard Universität entwickelt. Das Spiel (CS50 Jelly genannt) wurde in Unity erstellt. Es handelt sich um ein Puzzle-Spiel, bei dem man eine Kugel per Mausbewegung steuert – ähnlich wie bei Angry Birds. Mit einem Rechtsklick kann man das Material der Kugel ändern, was für manche Level notwendig ist. Das Spiel enthält fünf Level mit zunehmendem Schwierigkeitsgrad. Verliert man (z. B. durch Spikes), beginnt der Level von vorn. Am Ende erscheint ein Glückwunschbildschirm. Man kann Level wiederholen, um alle Sterne zu sammeln. Quelle: https://github.com/me50/ObliMario"
       },
       "pacman": {
         "title": "Pacman Spiel",
+        "description": "Eine Implementierung des klassischen Arcade-Spiels.",
         "content": "Hier ist PACMAN – das klassische Arcade-Spiel, neu entwickelt in Unity! Dieses Projekt ist eine originalgetreue Nachbildung mit authentischem Labyrinth und KI-Verhalten der Geister. Die Karte wird dynamisch aus einer .csv-Datei erzeugt, was einfache Anpassung ermöglicht. Außerdem gibt es ein Highscore-System, das in einer .txt-Datei speichert. Quellcode: https://github.com/ObliMario/PACMAN"
       },
       "evo": {
         "title": "Evolutionsspiel",
+        "description": "Eine Simulation zur Erforschung evolutionärer Algorithmen.",
         "content": "Willkommen zu meinem Spielprototyp! In diesem Spiel kannst du Gene von zwei Tieren kombinieren, um eine neue Generation mit einzigartigen Eigenschaften zu erzeugen. Die Gene bestimmen Größe und Farbe. Die Nachkommen erben Merkmale von den Eltern. Das Spiel basiert auf echter DNA-Dynamik und bietet ein lehrreiches Erlebnis. Je mehr du experimentierst, desto mehr Veränderungen wirst du sehen. Weitere Funktionen sind in Planung."
       },
       "DSEncryption": {
         "title": "Verschlüsselungssystem mit dynamischen Systemen",
+        "description": "Ein Verschlüsselungssystem basierend auf dynamischen mathematischen Systemen.",
         "content": "Dies ist mein Abschlussprojekt: eine Software zur allgemeinen Verschlüsselung und Speicherung, entwickelt für Linux-Ubuntu. Die grafische Oberfläche wurde mit Tkinter gebaut. Man kann damit jede Datei verschlüsseln und entschlüsseln, basierend auf dem Startwert 'x0' als Schlüssel. Das Programm wird mit 'GUI.py' gestartet. Der Quellcode ist auf GitHub verfügbar: https://github.com/ObliMario/DS_EncryptionSystem. Ich bin stolz auf dieses Projekt, das meine Arbeit im Bereich Kryptografie und Sicherheit widerspiegelt."
       },
       "quiz": {
         "title": "Quiz-Programm",
+        "description": "Eine anpassbare Quiz-Anwendung.",
         "content": "Hier ist mein Quiz-Programm! Es ermöglicht die einfache Erstellung und Durchführung von Tests im .txt-Format. Du gibst die Fragen in eine Datei ein und das Programm liest sie automatisch ein. Es verfolgt deine Punkte und gibt am Ende ein Ergebnis aus. Du kannst auch die richtigen Antworten einsehen. Quellcode: https://github.com/ObliMario/quiz – Ich hoffe, es ist nützlich!"
       },
       "deutschapp": {
         "title": "Deutsch App",
+        "description": "Eine mobile Anwendung zum Erlernen deutscher Vokabeln.",
         "content": "Diese App wurde mit Flutter entwickelt und hilft beim Deutschlernen als Fremdsprache. In der Rubrik 'Präpositionen' werden Verben mit ihren üblichen Präpositionen angezeigt. Du kannst neue Einträge hinzufügen oder den Inhalt zurücksetzen. Beim Üben wird nur das Verb gezeigt, und du sollst die passenden Präpositionen erraten. Nach dem Aufdecken erscheint die Bedeutung. Verwalten kannst du alles über das Menü: suchen, bearbeiten, löschen."
       },
       "florgame": {
         "title": "FlorGame VR (Unity VR)",
+        "description": "Ein VR-Experiment mit Projektilmechaniken.",
         "content": "Dieses Video zeigt eine Demo eines VR-Spiels, das derzeit mit Unity 6 entwickelt wird. Ziel ist es, ein Projektil mit bestimmter Kraft und Winkel abzufeuern. Während des Flugs kann man es per Handbewegung korrigieren. Man kann sich zum Ball teleportieren und erneut starten (X/Z-Koordinaten bleiben gleich). Ziel ist es, alle Blumen auf der Karte zu aktivieren. Fällt man ins Wasser, startet man neu. Geplant sind: Timer, Schusszähler und verschiedene Level. Ein ruhiges, aber spannendes Erlebnis!"
       },
       "warehouse": {
         "title": "SQL Warehouse Project",
+        "description": "Ein komplettes SQL-basiertes Data Warehouse mit modularem Design.",
         "content": "Dieses Projekt implementiert ein komplettes SQL-basiertes Data Warehouse mit einer modularen Drei-Schichten-Architektur (Bronze, Silver und Gold). Ziel ist es, Rohdaten aus CRM und ERP zu konsolidieren, zu bereinigen und in eine zuverlässige, analysebereite Struktur zu modellieren. Das Projekt umfasst Datenaufnahme, -transformation und -speicherung, um die Daten für Berichterstattung und Analyse zugänglich zu machen. Die Architektur ermöglicht Skalierbarkeit und Flexibilität, geeignet für verschiedene Datenquellen und Geschäftsanforderungen. Der Quellcode ist auf GitHub verfügbar: https://github.com/ObliMario/sql-data-warehause-project.git"  
       }
     }

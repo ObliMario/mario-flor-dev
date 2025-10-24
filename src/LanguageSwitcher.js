@@ -9,13 +9,32 @@ function LanguageSwitcher() {
     localStorage.setItem("lang", lng); // guardar preferencia
   };
 
+  const currentLanguage = i18n.language;
+
   return (
     <div className="language-switcher">
-      <button onClick={() => changeLanguage("de")}>DE</button>
-      <button onClick={() => changeLanguage("en")}>EN</button>
-      <button onClick={() => changeLanguage("es")}>ES</button>
+      <button 
+        onClick={() => changeLanguage("de")}
+        className={currentLanguage === "de" ? "active" : ""}
+        aria-pressed={currentLanguage === "de"}
+      >
+        DE
+      </button>
+      <button 
+        onClick={() => changeLanguage("en")}
+        className={currentLanguage === "en" ? "active" : ""}
+        aria-pressed={currentLanguage === "en"}
+      >
+        EN
+      </button>
+      <button 
+        onClick={() => changeLanguage("es")}
+        className={currentLanguage === "es" ? "active" : ""}
+        aria-pressed={currentLanguage === "es"}
+      >
+        ES
+      </button>
     </div>
-
   );
 }
 

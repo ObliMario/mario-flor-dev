@@ -1,11 +1,65 @@
 {
+  "tech": {
+    "unity": "Unity",
+    "csharp": "C#",
+    "js": "JS",
+    "canvas": "Canvas",
+    "vr": "VR"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una colección de mi trabajo y experimentos",
+    "filters": {
+      "all": "Todos",
+      "search": "Buscar proyectos...",
+      "newest": "Más recientes",
+      "oldest": "Más antiguos",
+      "alphabetical": "A–Z"
+    },
+    "empty": {
+      "title": "No se encontraron proyectos",
+      "description": "Prueba con diferentes filtros o términos de búsqueda.",
+      "reset": "Mostrar todos"
+    },
+    "buttons": {
+      "viewDemo": "Ver Demo",
+      "viewGitHub": "Ver en GitHub"
+    }
+  },
   "home": {
     "title": "Bienvenido a mi sitio web personal.",
     "intro": "Mi nombre es Mario y en este blog quiero compartir contigo mis proyectos e intereses. Espero que encuentres algo que te guste y disfrutes tu visita.",
     "more": "Si quieres saber más sobre mí y mis proyectos, puedes hacer clic en el menú en la esquina superior derecha. Allí encontrarás información detallada sobre mis habilidades y experiencia, así como enlaces a mis trabajos más destacados.\nSi tienes alguna pregunta o comentario, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y a conectar con personas interesantes.",
     "thanks": "¡Gracias por visitar mi sitio web!",
     "contact": "Si quieres ponerte en contacto, no dudes en escribirme por mis redes sociales.",
-    "signature": "Mario"
+    "signature": "Mario",
+    "hero": {
+      "eyebrow": "Ingeniero en TI & Desarrollador Web",
+      "title": "Hola, soy",
+      "name": "Mario Flor",
+      "subtitle": "Construyo experiencias web modernas y performantes con React, enfocándome en arquitectura limpia, animaciones y excelente UX.",
+      "buttonProjects": "Ver Proyectos",
+      "buttonAbout": "Sobre Mí",
+      "techLabel": "Tecnologías"
+    },
+    "featured": {
+      "title": "Proyectos Destacados",
+      "projects": {
+        "ai": {
+          "title": "Agente de Inteligencia Artificial",
+          "desc": "IA entrenada para recoger monedas y evitar enemigos."
+        },
+        "jelly": {
+          "title": "Juego CS50 Jelly",
+          "desc": "Juego puzzle estilo Angry Birds con 5 niveles."
+        },
+        "vr": {
+          "title": "FlorGame VR",
+          "desc": "Juego VR de proyectiles para activar flores."
+        }
+      },
+      "cta": "Saber más →"
+    }
   },
   "menu": {
     "home": "Inicio",
@@ -16,15 +70,6 @@
     "title": "Ingeniero en TI",
     "webdev": "Desarrollador Web",
     "gamedev": "Desarrollador de Videojuegos"
-  },
-  "profile": {
-    "title": "Perfil",
-    "subtitle": "Sobre mí",
-    "description": "Soy un ingeniero en TI con experiencia en desarrollo web y videojuegos. Me apasiona crear soluciones innovadoras y eficientes.",
-    "skills": "Habilidades",
-    "experience": "Experiencia",
-    "education": "Educación",
-    "contact": "Contacto"
   },
   "profile": {
     "name": "Mario Flor Peñafiel",
@@ -130,42 +175,52 @@
     "posts": {
       "website": {
         "title": "¡Este sitio web! (React)",
+        "description": "Un sitio web de portafolio personal construido con React.",
         "content": "¡Bienvenido a mi sitio web de portafolio! Este sitio está construido usando React y React Router, y utiliza AWS S3 para alojar algunos de los elementos. Presenta hermosas animaciones y transiciones CSS, y está diseñado para ser completamente responsivo y adaptarse a diferentes tamaños de pantalla. El código está optimizado para velocidad, asegurando que la página cargue rápidamente para los visitantes. En este sitio puedes encontrar algunos de mis proyectos y conocer más sobre mi formación profesional y habilidades. Continuaré agregando más proyectos y actualizaciones en el futuro. El código fuente de este sitio está disponible en GitHub para cualquiera que esté interesado. ¡Espero que disfrutes explorando mi sitio y conociendo más sobre mi trabajo. Gracias por visitar!"
       },
       "AI-Game": {
         "title": "Agente de Inteligencia Artificial (Unity)",
+        "description": "IA entrenada para jugar un juego simple.",
         "content": "Entrené una inteligencia artificial usando aprendizaje reforzado para que pudiera aprender a jugar un juego simple donde debía recolectar monedas evitando a un enemigo. A través del entrenamiento, la IA mejoró su habilidad hasta alcanzar la puntuación máxima. Puedes ver cómo aprende en el video adjunto. Este proyecto demuestra mis habilidades en el uso de IA y aprendizaje reforzado para resolver problemas y mejorar capacidades."
       },
       "jellygame": {
         "title": "Juego CS50 Jelly (Unity)",
+        "description": "Un juego de puzzle basado en físicas desarrollado para CS50G.",
         "content": "Este juego fue desarrollado como proyecto final del curso CS50G, impartido por Harvard. El juego (llamado CS50 Jelly) fue hecho en Unity. Es un juego de rompecabezas en el que se completan niveles moviendo una bola con el ratón, usando una mecánica parecida a Angry Birds. Al hacer clic derecho, la bola cambia de material, lo cual es necesario en algunos niveles. El juego consta de cinco niveles con dificultad progresiva y una experiencia cohesiva. Si la bola choca con pinchos o cae, se repite el nivel. Al terminar, aparece una pantalla de felicitación. También se pueden repetir niveles para obtener el puntaje perfecto (3 estrellas). Puedes descargarlo desde: https://github.com/me50/ObliMario"
       },
       "pacman": {
         "title": "Juego Pacman (Unity)",
+        "description": "Una implementación del clásico juego arcade.",
         "content": "Presentamos PACMAN, el clásico arcade traído a la vida en Unity. Este proyecto es una recreación fiel del juego original, con el laberinto y fantasmas con comportamiento de IA auténtico. El mapa se genera dinámicamente leyendo un archivo .csv, permitiendo personalización. Incluye un sistema de puntajes altos que se guarda en un archivo .txt. El código fuente está en: https://github.com/ObliMario/PACMAN"
       },
       "evo": {
         "title": "Juego de Evolución (Unity)",
+        "description": "Una simulación que explora algoritmos evolutivos.",
         "content": "¡Bienvenido a mi prototipo de juego! Aquí puedes crear y mezclar genes de dos animales para generar descendencia con características únicas. Los genes determinan el tamaño y color, y los hijos heredan rasgos de sus padres. El juego se basa en dinámicas reales de ADN, ofreciendo una experiencia educativa. A medida que mezclas genes, verás cómo evolucionan los animales. El juego sigue en desarrollo y planeo agregar más funciones."
       },
       "DSEncryption": {
         "title": "Sistema de Encriptación con Sistemas Dinámicos (C)",
+        "description": "Un sistema de cifrado basado en sistemas matemáticos dinámicos.",
         "content": "Presento mi tesis: una aplicación de software que implementa un método generalizado de encriptación y almacenamiento, diseñada para sistemas Linux-Ubuntu. Tiene una interfaz gráfica amigable usando Tkinter. Permite codificar y decodificar archivos usando una clave inicial 'x0'. Para ejecutarla, corre el código 'GUI.py'. El código está en GitHub: https://github.com/ObliMario/DS_EncryptionSystem. Estoy orgulloso de este proyecto que representa el esfuerzo y la investigación que realicé en criptografía y seguridad."
       },
       "quiz": {
         "title": "Programa de Quiz (Python)",
+        "description": "Una aplicación de quiz personalizable.",
         "content": "¡Presento mi programa de cuestionarios! Permite crear y aplicar quizzes fácilmente usando un archivo .txt. Solo introduce los datos y el programa los leerá y mostrará. Lleva un registro de los aciertos y muestra resultados. Al final, muestra la puntuación y respuestas correctas. El código fuente está en: https://github.com/ObliMario/quiz ¡Gracias por revisar mi proyecto!"
       },
       "deutschapp": {
         "title": "App de Alemán (Flutter)",
+        "description": "Una aplicación móvil para aprender vocabulario alemán.",
         "content": "Esta app en Flutter ayuda a aprender alemán como lengua extranjera. En la sección 'Preposiciones' se muestran verbos comunes y sus preposiciones. Se pueden añadir nuevos verbos, reiniciar contenido, y practicar con un modelo de tarjetas. Muestra el verbo y luego las preposiciones, y al hacer clic muestra su significado. Desde el menú se puede buscar, modificar o eliminar combinaciones de verbo y preposición."
       },
       "florgame": {
         "title": "FlorGame VR (Unity VR)",
+        "description": "Un experimento de VR que involucra mecánicas de proyectiles.",
         "content": "Este video muestra una demo de un juego VR en desarrollo en Unity 6. El jugador lanza un proyectil aplicando fuerza y ángulo, con posibilidad de corregir en vuelo usando las manos. Puede teletransportarse al punto de impacto y lanzar desde el mismo X y Z. El objetivo es activar todas las flores en el mapa. Caer al agua reinicia el nivel. Se planean cronómetro, contador de tiros y varios niveles temáticos. Está diseñado para ser una experiencia relajante pero desafiante."
       },
       "warehouse": {
         "title": "Proyecto Warehouse SQL",
+        "description": "Un Data Warehouse SQL completo con diseño modular.",
         "content": "Este proyecto implementa un Data Warehouse SQL completo con una arquitectura modular de tres capas (Bronce, Plata y Oro). Su objetivo es consolidar, limpiar y modelar datos CRM y ERP en una estructura confiable y lista para análisis. Incluye procesos de ingesta, transformación y almacenamiento de datos, asegurando que la información sea accesible para informes y análisis. La arquitectura permite escalabilidad y flexibilidad, adecuada para diversas fuentes de datos y requisitos empresariales. El código fuente está disponible en GitHub para quienes deseen explorar los detalles de implementación. Enlace al repositorio de GitHub: https://github.com/ObliMario/sql-data-warehause-project.git"
       }
     }

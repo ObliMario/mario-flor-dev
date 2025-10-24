@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { LeftBar } from "./LeftBar";
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
+import { ThemeContext } from "./ThemeContext";
 
 function Container({ children }) {
+  const { isDarkTheme } = useContext(ThemeContext);
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // this loads the tsParticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
@@ -32,7 +35,7 @@ function Container({ children }) {
             },
             background: {
               color: {
-                value: "#282c34",
+                value: isDarkTheme ? "#282c34" : "#F6F8FB",
               },
             },
             fpsLimit: 70,

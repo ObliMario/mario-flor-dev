@@ -5,7 +5,7 @@ const posts = [];
 posts.push({
   i18nKey: "blog.posts.website",
   slug: "website",
-  imgcss: "App-logo",
+  imgcss: "blog-logo",
   image: logo,
   category: ["React"],
 });

@@ -34,7 +34,16 @@ function BlogPost() {
         {/* if post.image exists */}
         {post.image && (
           <div className="blogImg">
-            <img src={post.image} alt="logo" className={post.imgcss} />
+            {/* Contenedor estático que NO rota */}
+            <div className="logo-stage">
+              {/* Capa decorativa fija (glow/óvalo) */}
+              <div className="logo-bloom" aria-hidden="true"></div>
+
+              {/* ÚNICO elemento que rota */}
+              <div className="logo-rotor">
+                <img src={post.image} alt="React Logo" className="logo-img" />
+              </div>
+            </div>
           </div>
         )}
         {/* if post.link exists */}
