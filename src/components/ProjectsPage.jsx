@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import { posts } from "../blogdata";
 import { getYoutubeId, getYoutubeThumbnail, isYoutubeUrl, createYoutubeThumbnailProps } from "../utils/youtube";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [isDetailOpen, setIsDetailOpen] = useState(false);
+  const navigate = useNavigate();
 
   // Estados de filtros desde URL
   const categoryFilter = searchParams.get("category") || "all";
@@ -27,6 +26,9 @@ export default function ProjectsPage() {
   // Proyectos filtrados y ordenados
   const filteredProjects = useMemo(() => {
     let filtered = posts;
+
+    // Filtro por mostrar/ocultar (mostrar por defecto si no está definido)
+    filtered = filtered.filter(post => post.mostrar !== false);
 
     // Filtro por categoría
     if (categoryFilter !== "all") {
@@ -75,35 +77,10 @@ export default function ProjectsPage() {
     setSearchParams(params);
   };
 
-  // Manejar clic en proyecto
+  // Manejar clic en proyecto - navegar directamente a la página del proyecto
   const handleProjectClick = (project) => {
-    setSelectedProject(project);
-    setIsDetailOpen(true);
-    // Actualizar URL para deep-link
-    const params = new URLSearchParams(searchParams);
-    params.set("project", project.slug);
-    setSearchParams(params);
+    navigate(`/blog/${project.slug}`);
   };
-
-  // Cerrar panel de detalle
-  const closeDetail = () => {
-    setIsDetailOpen(false);
-    setSelectedProject(null);
-    const params = new URLSearchParams(searchParams);
-    params.delete("project");
-    setSearchParams(params);
-  };
-
-  // Manejar ESC para cerrar
-  useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === "Escape" && isDetailOpen) {
-        closeDetail();
-      }
-    };
-    document.addEventListener("keydown", handleEsc);
-    return () => document.removeEventListener("keydown", handleEsc);
-  }, [isDetailOpen]);
 
   return (
     <div className="projects-page">
@@ -196,13 +173,6 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      {/* Panel de detalle */}
-      {isDetailOpen && selectedProject && (
-        <ProjectDetail
-          project={selectedProject}
-          onClose={closeDetail}
-        />
-      )}
     </div>
   );
 }
@@ -331,68 +301,3 @@ function ProjectCard({ project, onClick }) {
   );
 }
 
-// Componente de panel de detalle
-function ProjectDetail({ project, onClose }) {
-  const { t } = useTranslation();
-
-  return (
-    <div className="project-detail-overlay" onClick={onClose}>
-      <div className="project-detail" onClick={(e) => e.stopPropagation()}>
-        <button className="project-detail__close" onClick={onClose}>
-          ×
-        </button>
-        
-        <div className="project-detail__header">
-          <h2 className="project-detail__title">
-            {t(`${project.i18nKey}.title`)}
-          </h2>
-          <div className="project-detail__stack">
-            {project.category.map(tech => (
-              <span key={tech} className="chip">{tech}</span>
-            ))}
-          </div>
-        </div>
-
-        <div className="project-detail__content">
-          {project.image && (
-            <div className="project-detail__media">
-              <img
-                src={project.image}
-                alt={t(`${project.i18nKey}.title`)}
-              />
-            </div>
-          )}
-
-          <div className="project-detail__text">
-            <p className="project-detail__description">
-              {t(`${project.i18nKey}.description` || "")}
-            </p>
-          </div>
-
-          <div className="project-detail__actions">
-            {project.linkGithub && (
-              <a 
-                href={project.linkGithub} 
-                className="button button--primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("projects.buttons.viewGitHub")}
-              </a>
-            )}
-            {project.YTlink && (
-              <a 
-                href={project.YTlink} 
-                className="button button--ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("projects.buttons.viewDemo")}
-              </a>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}

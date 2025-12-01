@@ -4,7 +4,8 @@
         "csharp": "C#",
         "js": "JS",
         "canvas": "Canvas",
-        "vr": "VR"
+        "vr": "VR",
+        "flutter": "Flutter"
     },
     "projects": {
         "title": "Projects",
@@ -23,7 +24,14 @@
         },
         "buttons": {
             "viewDemo": "View Demo",
-            "viewGitHub": "View on GitHub"
+            "viewGitHub": "View on GitHub",
+            "viewMore": "View More",
+            "backToProjects": "Back to Projects",
+            "watchOnYoutube": "Watch on YouTube",
+            "downloadApp": "Download on Google Play"
+        },
+        "gallery": {
+            "title": "Screenshots"
         }
     },
     "home": {
@@ -45,9 +53,9 @@
         "featured": {
             "title": "Featured Projects",
             "projects": {
-                "ai": {
-                    "title": "Artificial Intelligence Agent",
-                    "desc": "AI trained to collect coins and avoid enemies."
+                "halloraki": {
+                    "title": "Hallo Raki",
+                    "desc": "A mobile application for learning German vocabulary."
                 },
                 "jelly": {
                     "title": "CS50 Jelly Game",
@@ -208,8 +216,8 @@
                 "description": "A customizable quiz application.",
                 "content": "Introducing my Quiz program! This program allows you to easily create and administer quizzes using a simple .txt file format. Simply enter the quiz data into the .txt file and the program will automatically read and display the questions and answers. As the user answers the questions, the program will track their score and provide feedback on their performance. At the end of the quiz, the user will receive their final score and can review the correct answers for any questions they may have gotten wrong. You can find the source code for this program on GitHub at the following link: https://github.com/ObliMario/quiz I hope you enjoy using my Quiz program and find it useful for creating and administering quizzes. Thank you for checking out my project!"
             },
-            "deutschapp": {
-                "title": "Deutsch App (Flutter)",
+            "halloraki": {
+                "title": "Hallo Raki",
                 "description": "A mobile application for learning German vocabulary.",
                 "content": "This app is developed in Flutter and is designed to help users learn German as a foreign language. In the 'Prepositions' section, a list of verbs with their most common prepositions is displayed. It also allows you to add new verbs, new prepositions, and reset the content to its initial state. When you open the practice screen, the verbs to study are shown. The app follows a flashcard model: it only shows the verb and asks you to think of the prepositions that go with it. By pressing 'Reveal prepositions,' the correct prepositions associated with the verb are displayed. When you tap on the card with the preposition, the meaning of the verb with that preposition is shown. From the verbs menu, you can search, modify, add, and delete any verb-preposition combination."
             },

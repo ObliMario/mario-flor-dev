@@ -4,7 +4,8 @@
     "csharp": "C#",
     "js": "JS",
     "canvas": "Canvas",
-    "vr": "VR"
+    "vr": "VR",
+    "flutter": "Flutter"
   },
   "projects": {
     "title": "Projekte",
@@ -23,7 +24,14 @@
     },
     "buttons": {
       "viewDemo": "Demo ansehen",
-      "viewGitHub": "Auf GitHub ansehen"
+      "viewGitHub": "Auf GitHub ansehen",
+      "viewMore": "Mehr ansehen",
+      "backToProjects": "Zurück zu Projekten",
+      "watchOnYoutube": "Auf YouTube ansehen",
+      "downloadApp": "Im Google Play herunterladen"
+    },
+    "gallery": {
+      "title": "Screenshots"
     }
   },
   "home": {
@@ -45,9 +53,9 @@
     "featured": {
       "title": "Ausgewählte Projekte",
       "projects": {
-        "ai": {
-          "title": "Künstliche Intelligenz Agent",
-          "desc": "KI trainiert zum Sammeln von Münzen und Vermeiden von Feinden."
+        "halloraki": {
+          "title": "Hallo Raki",
+          "desc": "Eine mobile Anwendung zum Erlernen deutscher Vokabeln."
         },
         "jelly": {
           "title": "CS50 Jelly Spiel",
@@ -208,8 +216,8 @@
         "description": "Eine anpassbare Quiz-Anwendung.",
         "content": "Hier ist mein Quiz-Programm! Es ermöglicht die einfache Erstellung und Durchführung von Tests im .txt-Format. Du gibst die Fragen in eine Datei ein und das Programm liest sie automatisch ein. Es verfolgt deine Punkte und gibt am Ende ein Ergebnis aus. Du kannst auch die richtigen Antworten einsehen. Quellcode: https://github.com/ObliMario/quiz – Ich hoffe, es ist nützlich!"
       },
-      "deutschapp": {
-        "title": "Deutsch App",
+      "halloraki": {
+        "title": "Hallo Raki",
         "description": "Eine mobile Anwendung zum Erlernen deutscher Vokabeln.",
         "content": "Diese App wurde mit Flutter entwickelt und hilft beim Deutschlernen als Fremdsprache. In der Rubrik 'Präpositionen' werden Verben mit ihren üblichen Präpositionen angezeigt. Du kannst neue Einträge hinzufügen oder den Inhalt zurücksetzen. Beim Üben wird nur das Verb gezeigt, und du sollst die passenden Präpositionen erraten. Nach dem Aufdecken erscheint die Bedeutung. Verwalten kannst du alles über das Menü: suchen, bearbeiten, löschen."
       },

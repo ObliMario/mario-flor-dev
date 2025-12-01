@@ -12,7 +12,7 @@ const testUrls = [
   "https://youtu.be/p_NJqCJ2Fts", // pacman
   "https://youtu.be/7uEtePL5Ci4", // evo
   "https://youtu.be/bEyFS7pfzKg", // quiz
-  "https://youtu.be/-pZRJMEHaOQ", // deutschapp
+  "https://youtu.be/-pZRJMEHaOQ", // halloraki
   "https://youtu.be/SywrReqCmrA", // florgame-vr
 ];
 
@@ -40,7 +40,7 @@ const expectedIds = [
   "p_NJqCJ2Fts", // pacman
   "7uEtePL5Ci4", // evo
   "bEyFS7pfzKg", // quiz
-  "-pZRJMEHaOQ", // deutschapp
+  "-pZRJMEHaOQ", // halloraki
   "SywrReqCmrA", // florgame-vr
 ];
 

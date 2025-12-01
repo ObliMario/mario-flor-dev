@@ -1,41 +1,36 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
+  const languages = [
+    { code: 'en', label: 'EN' },
+    { code: 'es', label: 'ES' },
+    { code: 'de', label: 'DE' }
+  ];
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem("lang", lng); // guardar preferencia
+    localStorage.setItem('lang', lng);
   };
-
-  const currentLanguage = i18n.language;
 
   return (
     <div className="language-switcher">
-      <button 
-        onClick={() => changeLanguage("de")}
-        className={currentLanguage === "de" ? "active" : ""}
-        aria-pressed={currentLanguage === "de"}
-      >
-        DE
-      </button>
-      <button 
-        onClick={() => changeLanguage("en")}
-        className={currentLanguage === "en" ? "active" : ""}
-        aria-pressed={currentLanguage === "en"}
-      >
-        EN
-      </button>
-      <button 
-        onClick={() => changeLanguage("es")}
-        className={currentLanguage === "es" ? "active" : ""}
-        aria-pressed={currentLanguage === "es"}
-      >
-        ES
-      </button>
+      {languages.map((lang) => (
+        <button
+          key={lang.code}
+          onClick={() => changeLanguage(lang.code)}
+          className={i18n.language === lang.code ? 'active' : ''}
+          aria-pressed={i18n.language === lang.code}
+          aria-label={`Switch to ${lang.label} language`}
+        >
+          {lang.label}
+        </button>
+      ))}
     </div>
   );
 }
 
 export default LanguageSwitcher;
+

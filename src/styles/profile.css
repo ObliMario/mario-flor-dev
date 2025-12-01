@@ -69,7 +69,7 @@
 
 .toc-link.active {
   color: var(--text);
-  background: color-mix(in oklab, var(--primary) 10%, white);
+  background: color-mix(in oklab, var(--primary) 10%, var(--surface));
   border: 1px solid color-mix(in oklab, var(--primary) 25%, var(--border));
   border-radius: var(--radius);
   font-weight: 600;

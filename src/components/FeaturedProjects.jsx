@@ -6,11 +6,11 @@ export default function FeaturedProjects() {
 
   const projects = [
     {
-      title: t("home.featured.projects.ai.title"),
-      desc: t("home.featured.projects.ai.desc"),
-      stack: [t("tech.unity"), t("tech.csharp")],
-      href: "/#/blog/AI-Game",
-      img: "/images/projects/ai-agent.jpg",
+      title: t("home.featured.projects.halloraki.title"),
+      desc: t("home.featured.projects.halloraki.desc"),
+      stack: [t("tech.flutter")],
+      href: "/#/blog/halloraki",
+      img: "https://marioflordev.s3.us-west-2.amazonaws.com/projects/halloraki/feature_graphic.png",
     },
     {
       title: t("home.featured.projects.jelly.title"),

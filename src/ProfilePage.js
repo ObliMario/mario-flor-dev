@@ -69,7 +69,13 @@ function ProfilePage() {
                   <a href="mailto:mariofrancisco4d@gmail.com" className="button button--primary button--small">
                     Kontaktieren
                   </a>
-                  <a href="/cv.pdf" className="button button--ghost button--small" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href="https://marioflordev.s3.us-west-2.amazonaws.com/open_docs/CV-Mario_Flor_P.pdf" 
+                    className="button button--ghost button--small" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    download="CV-Mario_Flor_P.pdf"
+                  >
                     CV Download
                   </a>
                 </div>

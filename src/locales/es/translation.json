@@ -4,7 +4,8 @@
     "csharp": "C#",
     "js": "JS",
     "canvas": "Canvas",
-    "vr": "VR"
+    "vr": "VR",
+    "flutter": "Flutter"
   },
   "projects": {
     "title": "Proyectos",
@@ -23,7 +24,14 @@
     },
     "buttons": {
       "viewDemo": "Ver Demo",
-      "viewGitHub": "Ver en GitHub"
+      "viewGitHub": "Ver en GitHub",
+      "viewMore": "Ver Más",
+      "backToProjects": "Volver a Proyectos",
+      "watchOnYoutube": "Ver en YouTube",
+      "downloadApp": "Descargar en Google Play"
+    },
+    "gallery": {
+      "title": "Capturas"
     }
   },
   "home": {
@@ -45,9 +53,9 @@
     "featured": {
       "title": "Proyectos Destacados",
       "projects": {
-        "ai": {
-          "title": "Agente de Inteligencia Artificial",
-          "desc": "IA entrenada para recoger monedas y evitar enemigos."
+        "halloraki": {
+          "title": "Hallo Raki",
+          "desc": "Una aplicación móvil para aprender vocabulario alemán."
         },
         "jelly": {
           "title": "Juego CS50 Jelly",
@@ -208,8 +216,8 @@
         "description": "Una aplicación de quiz personalizable.",
         "content": "¡Presento mi programa de cuestionarios! Permite crear y aplicar quizzes fácilmente usando un archivo .txt. Solo introduce los datos y el programa los leerá y mostrará. Lleva un registro de los aciertos y muestra resultados. Al final, muestra la puntuación y respuestas correctas. El código fuente está en: https://github.com/ObliMario/quiz ¡Gracias por revisar mi proyecto!"
       },
-      "deutschapp": {
-        "title": "App de Alemán (Flutter)",
+      "halloraki": {
+        "title": "Hallo Raki",
         "description": "Una aplicación móvil para aprender vocabulario alemán.",
         "content": "Esta app en Flutter ayuda a aprender alemán como lengua extranjera. En la sección 'Preposiciones' se muestran verbos comunes y sus preposiciones. Se pueden añadir nuevos verbos, reiniciar contenido, y practicar con un modelo de tarjetas. Muestra el verbo y luego las preposiciones, y al hacer clic muestra su significado. Desde el menú se puede buscar, modificar o eliminar combinaciones de verbo y preposición."
       },
