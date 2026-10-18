@@ -72,7 +72,8 @@
   "menu": {
     "home": "Inicio",
     "projects": "Proyectos",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "toggle": "Abrir o cerrar el menú de navegación"
   },
   "leftBar": {
     "title": "Ingeniero en TI",

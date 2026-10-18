@@ -1,8 +1,15 @@
 // src/components/Hero.jsx
 import { useTranslation } from "react-i18next";
+import logo from "../logo.svg";
 
 export default function Hero() {
   const { t } = useTranslation();
+
+  // Con HashRouter un href="#featured" se interpreta como ruta, así que se hace scroll a mano
+  const scrollToFeatured = (e) => {
+    e.preventDefault();
+    document.getElementById("featured")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="hero">
@@ -17,7 +24,7 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a className="button button--primary" href="#featured">
+            <a className="button button--primary" href="#/" onClick={scrollToFeatured}>
               {t("home.hero.buttonProjects")}
             </a>
             <a className="button button--ghost" href="/#/profile">
@@ -42,7 +49,7 @@ export default function Hero() {
               className="visual__img"
               src="https://marioflordev.s3.us-west-2.amazonaws.com/cvImage.jpeg"
               alt="Mario Flor"
-              onError={(e) => { e.currentTarget.src = "/logo.svg"; e.currentTarget.alt = "React Logo"; }}
+              onError={(e) => { e.currentTarget.src = logo; }}
             />
           </div>
         </div>

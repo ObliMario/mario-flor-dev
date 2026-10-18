@@ -45,9 +45,65 @@ describe('routing', () => {
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(title);
   });
 
+  test('navigating to another page scrolls back to the top', async () => {
+    const scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+    renderAt('#/blog');
+    scrollTo.mockClear();
+
+    await userEvent.click(screen.getByRole('link', { name: en.menu.home }));
+
+    expect(window.location.hash).toBe('#/');
+    expect(scrollTo).toHaveBeenCalledWith(0, 0);
+    scrollTo.mockRestore();
+  });
+
   test('unknown routes show Not found', () => {
     renderAt('#/does-not-exist');
     expect(screen.getByText('Not found')).toBeInTheDocument();
+  });
+});
+
+describe('home hero', () => {
+  test('"View Projects" scrolls to the featured section instead of changing the route', async () => {
+    const scrollIntoView = vi.fn();
+    Element.prototype.scrollIntoView = scrollIntoView;
+    renderAt('#/');
+
+    await userEvent.click(screen.getByRole('link', { name: en.home.hero.buttonProjects }));
+
+    expect(window.location.hash).toBe('#/');
+    expect(screen.queryByText('Not found')).not.toBeInTheDocument();
+    expect(scrollIntoView).toHaveBeenCalledTimes(1);
+    expect(scrollIntoView.mock.contexts[0].id).toBe('featured');
+  });
+});
+
+describe('mobile menu', () => {
+  test('toggle opens the menu and navigating closes it', async () => {
+    renderAt('#/');
+    const toggle = screen.getByRole('button', { name: en.menu.toggle });
+    const nav = document.getElementById('main-nav');
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    expect(nav).not.toHaveClass('is-open');
+
+    await userEvent.click(toggle);
+    expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    expect(nav).toHaveClass('is-open');
+
+    await userEvent.click(screen.getByRole('link', { name: en.menu.profile }));
+    expect(window.location.hash).toBe('#/profile');
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    expect(nav).not.toHaveClass('is-open');
+  });
+
+  test('clicking the current page closes the menu', async () => {
+    renderAt('#/');
+    const toggle = screen.getByRole('button', { name: en.menu.toggle });
+
+    await userEvent.click(toggle);
+    await userEvent.click(screen.getByRole('link', { name: en.menu.home }));
+
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
   });
 });
 
@@ -78,5 +134,6 @@ describe('language switcher', () => {
     expect(screen.getByRole('heading', { level: 1, name: heroName(es) })).toBeInTheDocument();
     expect(localStorage.getItem('lang')).toBe('es');
     expect(screen.getByRole('button', { name: 'Switch to ES language' })).toHaveAttribute('aria-pressed', 'true');
+    expect(document.documentElement).toHaveAttribute('lang', 'es');
   });
 });

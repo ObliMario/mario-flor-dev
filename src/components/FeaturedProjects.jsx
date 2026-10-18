@@ -1,6 +1,8 @@
 // src/components/FeaturedProjects.jsx
 import { useTranslation } from "react-i18next";
 
+const PLACEHOLDER_IMG = "/images/placeholder.svg";
+
 export default function FeaturedProjects() {
   const { t } = useTranslation();
 
@@ -39,9 +41,11 @@ export default function FeaturedProjects() {
                 <img 
                   src={p.img} 
                   alt="" 
-                  onError={(e) => { 
-                    e.currentTarget.src = `https://via.placeholder.com/400x300/1a1f2e/60a5fa?text=${encodeURIComponent(p.title)}`; 
-                  }} 
+                  onError={(e) => {
+                    if (!e.currentTarget.src.endsWith(PLACEHOLDER_IMG)) {
+                      e.currentTarget.src = PLACEHOLDER_IMG;
+                    }
+                  }}
                 />
               </div>
               <div className="project-card__body">
