@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { posts } from "../blogdata";
-import { getYoutubeId, getYoutubeThumbnail, isYoutubeUrl, createYoutubeThumbnailProps } from "../utils/youtube";
+import { isYoutubeUrl, createYoutubeThumbnailProps } from "../utils/youtube";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
                     className={`filter-chip ${categoryFilter === category ? "active" : ""}`}
                     onClick={() => updateFilters({ category })}
                     role="tab"
-                    aria-pressed={categoryFilter === category}
+                    aria-selected={categoryFilter === category}
                   >
                     {category === "all" ? t("projects.filters.all") : category}
                   </button>
@@ -181,7 +181,6 @@ export default function ProjectsPage() {
 function ProjectCard({ project, onClick }) {
   const { t } = useTranslation();
   const [imageSrc, setImageSrc] = useState(null);
-  const [imageError, setImageError] = useState(false);
 
   // Determinar la fuente de la imagen
   const getImageSource = useMemo(() => {
@@ -213,7 +212,6 @@ function ProjectCard({ project, onClick }) {
   // Manejar carga de imagen
   useEffect(() => {
     setImageSrc(getImageSource.src);
-    setImageError(false);
   }, [getImageSource.src]);
 
   // Manejar error de imagen
@@ -224,7 +222,6 @@ function ProjectCard({ project, onClick }) {
     } else {
       // Fallback final a placeholder
       setImageSrc("https://via.placeholder.com/400x225/1a1f2e/60a5fa?text=Project");
-      setImageError(true);
     }
   };
 
@@ -249,7 +246,6 @@ function ProjectCard({ project, onClick }) {
             loading="lazy"
             decoding="async"
             onError={handleImageError}
-            onLoad={() => setImageError(false)}
           />
         )}
         {getImageSource.isYoutube && (
