@@ -1,141 +1,110 @@
-/**
- * Test cases for YouTube utility functions
- * Based on URLs from the current dataset
- */
+import {
+  getYoutubeId,
+  getYoutubeThumbnailUrl,
+  getYoutubeThumbnail,
+  isYoutubeUrl,
+  createYoutubeThumbnailProps,
+} from './youtube';
 
-import { getYoutubeId, getYoutubeThumbnail, isYoutubeUrl, createYoutubeThumbnailProps } from './youtube';
+const ID = 'hoGYSWDP73g';
 
-// Test URLs from the current dataset
-const testUrls = [
-  "https://youtu.be/hoGYSWDP73g", // AI-Game
-  "https://youtu.be/pBdRLonhN_k", // jellygame
-  "https://youtu.be/p_NJqCJ2Fts", // pacman
-  "https://youtu.be/7uEtePL5Ci4", // evo
-  "https://youtu.be/bEyFS7pfzKg", // quiz
-  "https://youtu.be/-pZRJMEHaOQ", // halloraki
-  "https://youtu.be/SywrReqCmrA", // florgame-vr
-];
-
-// Additional test cases for edge cases
-const edgeCaseUrls = [
-  "https://www.youtube.com/watch?v=hoGYSWDP73g",
-  "https://www.youtube.com/watch?v=hoGYSWDP73g&t=123s",
-  "https://www.youtube.com/watch?v=hoGYSWDP73g&list=PLxyz",
-  "https://www.youtube.com/shorts/hoGYSWDP73g",
-  "https://www.youtube.com/embed/hoGYSWDP73g",
-  "https://www.youtube-nocookie.com/embed/hoGYSWDP73g",
-  "https://youtu.be/hoGYSWDP73g?t=123s",
-  "https://youtu.be/hoGYSWDP73g&list=PLxyz",
-  "invalid-url",
-  "https://vimeo.com/123456789",
-  "",
-  null,
-  undefined
-];
-
-// Expected video IDs
-const expectedIds = [
-  "hoGYSWDP73g", // AI-Game
-  "pBdRLonhN_k", // jellygame
-  "p_NJqCJ2Fts", // pacman
-  "7uEtePL5Ci4", // evo
-  "bEyFS7pfzKg", // quiz
-  "-pZRJMEHaOQ", // halloraki
-  "SywrReqCmrA", // florgame-vr
-];
-
-/**
- * Run tests for YouTube utility functions
- */
-export function runYoutubeTests() {
-  console.log("🧪 Running YouTube utility tests...");
-  
-  let passed = 0;
-  let failed = 0;
-
-  // Test getYoutubeId with dataset URLs
-  console.log("\n📹 Testing getYoutubeId with dataset URLs:");
-  testUrls.forEach((url, index) => {
-    const result = getYoutubeId(url);
-    const expected = expectedIds[index];
-    if (result === expected) {
-      console.log(`✅ ${url} → ${result}`);
-      passed++;
-    } else {
-      console.log(`❌ ${url} → ${result} (expected: ${expected})`);
-      failed++;
-    }
+describe('getYoutubeId', () => {
+  test.each([
+    `https://youtu.be/${ID}`,
+    `https://youtu.be/${ID}?t=123s`,
+    `https://www.youtube.com/watch?v=${ID}`,
+    `https://www.youtube.com/watch?v=${ID}&t=123s`,
+    `https://www.youtube.com/watch?v=${ID}&list=PLxyz`,
+    `https://www.youtube.com/watch?feature=share&v=${ID}`,
+    `https://www.youtube.com/shorts/${ID}`,
+    `https://www.youtube.com/embed/${ID}`,
+    `https://www.youtube-nocookie.com/embed/${ID}`,
+    `  https://youtu.be/${ID}  `,
+  ])('extracts the id from %s', (url) => {
+    expect(getYoutubeId(url)).toBe(ID);
   });
 
-  // Test edge cases
-  console.log("\n🔍 Testing edge cases:");
-  edgeCaseUrls.forEach((url) => {
-    const result = getYoutubeId(url);
-    const isValid = result && result.length === 11;
-    if (isValid || result === null) {
-      console.log(`✅ ${url} → ${result}`);
-      passed++;
-    } else {
-      console.log(`❌ ${url} → ${result} (invalid result)`);
-      failed++;
-    }
+  test('keeps ids with dashes and underscores', () => {
+    expect(getYoutubeId('https://youtu.be/-pZRJMEHaOQ')).toBe('-pZRJMEHaOQ');
+    expect(getYoutubeId('https://youtu.be/p_NJqCJ2Fts')).toBe('p_NJqCJ2Fts');
   });
 
-  // Test isYoutubeUrl
-  console.log("\n🌐 Testing isYoutubeUrl:");
-  const youtubeUrls = testUrls.slice(0, 3);
-  const nonYoutubeUrls = ["https://vimeo.com/123", "https://example.com", "invalid"];
-  
-  [...youtubeUrls, ...nonYoutubeUrls].forEach((url) => {
-    const result = isYoutubeUrl(url);
-    const expected = youtubeUrls.includes(url);
-    if (result === expected) {
-      console.log(`✅ ${url} → ${result}`);
-      passed++;
-    } else {
-      console.log(`❌ ${url} → ${result} (expected: ${expected})`);
-      failed++;
-    }
+  test.each([
+    ['invalid-url'],
+    ['https://vimeo.com/123456789'],
+    ['https://youtu.be/short'],
+    [''],
+    [null],
+    [undefined],
+    [42],
+  ])('returns null for %p', (url) => {
+    expect(getYoutubeId(url)).toBeNull();
+  });
+});
+
+describe('getYoutubeThumbnailUrl', () => {
+  test('defaults to maxresdefault', () => {
+    expect(getYoutubeThumbnailUrl(ID)).toBe(`https://i.ytimg.com/vi/${ID}/maxresdefault.jpg`);
   });
 
-  // Test getYoutubeThumbnail
-  console.log("\n🖼️ Testing getYoutubeThumbnail:");
-  testUrls.slice(0, 3).forEach((url) => {
-    const result = getYoutubeThumbnail(url);
-    const expectedPattern = /^https:\/\/i\.ytimg\.com\/vi\/[a-zA-Z0-9_-]{11}\/maxresdefault\.jpg$/;
-    if (result && expectedPattern.test(result)) {
-      console.log(`✅ ${url} → ${result}`);
-      passed++;
-    } else {
-      console.log(`❌ ${url} → ${result} (invalid thumbnail URL)`);
-      failed++;
-    }
+  test('uses a valid requested quality', () => {
+    expect(getYoutubeThumbnailUrl(ID, 'hqdefault')).toBe(`https://i.ytimg.com/vi/${ID}/hqdefault.jpg`);
   });
 
-  // Test createYoutubeThumbnailProps
-  console.log("\n🎬 Testing createYoutubeThumbnailProps:");
-  testUrls.slice(0, 2).forEach((url) => {
-    const result = createYoutubeThumbnailProps(url, "Test Project");
-    if (result && result.src && result.alt && result.isYoutube === true) {
-      console.log(`✅ ${url} → props created`);
-      passed++;
-    } else {
-      console.log(`❌ ${url} → invalid props`);
-      failed++;
-    }
+  test('falls back to maxresdefault for an unknown quality', () => {
+    expect(getYoutubeThumbnailUrl(ID, 'huge')).toBe(`https://i.ytimg.com/vi/${ID}/maxresdefault.jpg`);
   });
 
-  // Summary
-  console.log(`\n📊 Test Results: ${passed} passed, ${failed} failed`);
-  
-  if (failed === 0) {
-    console.log("🎉 All tests passed!");
-  } else {
-    console.log("⚠️ Some tests failed. Check the implementation.");
-  }
+  test('rejects malformed ids', () => {
+    expect(getYoutubeThumbnailUrl('abc')).toBeNull();
+    expect(getYoutubeThumbnailUrl('hoGYSWDP73g/../x')).toBeNull();
+    expect(getYoutubeThumbnailUrl(null)).toBeNull();
+  });
+});
 
-  return { passed, failed };
-}
+describe('getYoutubeThumbnail', () => {
+  test('builds the thumbnail from a video url', () => {
+    expect(getYoutubeThumbnail(`https://youtu.be/${ID}`)).toBe(`https://i.ytimg.com/vi/${ID}/maxresdefault.jpg`);
+  });
 
-// Export test data for manual testing
-export { testUrls, edgeCaseUrls, expectedIds };
+  test('returns null for a non-YouTube url', () => {
+    expect(getYoutubeThumbnail('https://example.com')).toBeNull();
+  });
+});
+
+describe('isYoutubeUrl', () => {
+  test.each([
+    `https://youtu.be/${ID}`,
+    `https://www.youtube.com/watch?v=${ID}`,
+    `https://m.youtube.com/watch?v=${ID}`,
+    `https://www.youtube-nocookie.com/embed/${ID}`,
+  ])('accepts %s', (url) => {
+    expect(isYoutubeUrl(url)).toBe(true);
+  });
+
+  test.each([
+    'https://vimeo.com/123',
+    'https://example.com',
+    'invalid',
+    '',
+    null,
+  ])('rejects %p', (url) => {
+    expect(isYoutubeUrl(url)).toBe(false);
+  });
+});
+
+describe('createYoutubeThumbnailProps', () => {
+  test('returns image props with a hqdefault fallback', () => {
+    expect(createYoutubeThumbnailProps(`https://youtu.be/${ID}`, 'Test Project')).toEqual({
+      src: `https://i.ytimg.com/vi/${ID}/maxresdefault.jpg`,
+      fallbackSrc: `https://i.ytimg.com/vi/${ID}/hqdefault.jpg`,
+      alt: 'Miniaturbild: Test Project',
+      isYoutube: true,
+      videoId: ID,
+    });
+  });
+
+  test('returns null when there is no video id', () => {
+    expect(createYoutubeThumbnailProps('https://example.com', 'X')).toBeNull();
+  });
+});
