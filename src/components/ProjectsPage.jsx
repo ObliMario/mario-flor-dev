@@ -4,6 +4,8 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import { posts } from "../blogdata";
 import { isYoutubeUrl, createYoutubeThumbnailProps } from "../utils/youtube";
 
+const PLACEHOLDER_IMG = "/images/placeholder.svg";
+
 export default function ProjectsPage() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -203,7 +205,7 @@ function ProjectCard({ project, onClick }) {
 
     // Fallback: placeholder
     return {
-      src: "https://via.placeholder.com/400x225/1a1f2e/60a5fa?text=Project",
+      src: PLACEHOLDER_IMG,
       alt: t(`${project.i18nKey}.title`),
       isYoutube: false
     };
@@ -216,12 +218,12 @@ function ProjectCard({ project, onClick }) {
 
   // Manejar error de imagen
   const handleImageError = () => {
-    if (getImageSource.isYoutube && getImageSource.fallbackSrc) {
+    if (getImageSource.isYoutube && getImageSource.fallbackSrc && imageSrc !== getImageSource.fallbackSrc) {
       // Si es YouTube y falla maxres, intentar hqdefault
       setImageSrc(getImageSource.fallbackSrc);
     } else {
       // Fallback final a placeholder
-      setImageSrc("https://via.placeholder.com/400x225/1a1f2e/60a5fa?text=Project");
+      setImageSrc(PLACEHOLDER_IMG);
     }
   };
 

@@ -19,4 +19,11 @@ i18n.use(initReactI18next).init({
   }
 });
 
+// Mantener <html lang> en sincronía con el idioma activo (lectores de pantalla, traducción automática, SEO)
+const syncHtmlLang = (lng) => {
+  document.documentElement.lang = lng;
+};
+syncHtmlLang(i18n.language);
+i18n.on('languageChanged', syncHtmlLang);
+
 export default i18n;

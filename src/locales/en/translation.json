@@ -72,7 +72,8 @@
     "menu": {
         "home": "Home",
         "projects": "Projects",
-        "profile": "Profile"
+        "profile": "Profile",
+        "toggle": "Toggle navigation menu"
     },
     "leftBar": {
         "title": "IT Engineer",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./logo.svg";
 import { useTranslation } from "react-i18next";
@@ -8,6 +8,12 @@ import ThemeSwitcher from "./ThemeSwitcher";
 function Menu() {
   const { t } = useTranslation();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Cerrar el menú móvil al cambiar de página
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
   
   const routes = [
     { path: "/", text: t("menu.home") },
@@ -25,7 +31,7 @@ function Menu() {
           </a>
 
           {/* Main Navigation - Columna del contenido */}
-          <nav className="main-nav">
+          <nav id="main-nav" className={`main-nav${menuOpen ? " is-open" : ""}`}>
             {routes.map((route) => (
               <NavLink
                 key={route.path}
@@ -40,6 +46,16 @@ function Menu() {
 
           {/* Actions - Columna de acciones */}
           <div className="actions">
+            <button
+              type="button"
+              className="menu-toggle"
+              aria-expanded={menuOpen}
+              aria-controls="main-nav"
+              aria-label={t("menu.toggle")}
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              <span aria-hidden="true">{menuOpen ? "✕" : "☰"}</span>
+            </button>
             <ThemeSwitcher />
             <LanguageSwitcher />
           </div>

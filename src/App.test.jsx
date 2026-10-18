@@ -51,6 +51,40 @@ describe('routing', () => {
   });
 });
 
+describe('home hero', () => {
+  test('"View Projects" scrolls to the featured section instead of changing the route', async () => {
+    const scrollIntoView = vi.fn();
+    Element.prototype.scrollIntoView = scrollIntoView;
+    renderAt('#/');
+
+    await userEvent.click(screen.getByRole('link', { name: en.home.hero.buttonProjects }));
+
+    expect(window.location.hash).toBe('#/');
+    expect(screen.queryByText('Not found')).not.toBeInTheDocument();
+    expect(scrollIntoView).toHaveBeenCalledTimes(1);
+    expect(scrollIntoView.mock.contexts[0].id).toBe('featured');
+  });
+});
+
+describe('mobile menu', () => {
+  test('toggle opens the menu and navigating closes it', async () => {
+    renderAt('#/');
+    const toggle = screen.getByRole('button', { name: en.menu.toggle });
+    const nav = document.getElementById('main-nav');
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    expect(nav).not.toHaveClass('is-open');
+
+    await userEvent.click(toggle);
+    expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    expect(nav).toHaveClass('is-open');
+
+    await userEvent.click(screen.getByRole('link', { name: en.menu.profile }));
+    expect(window.location.hash).toBe('#/profile');
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    expect(nav).not.toHaveClass('is-open');
+  });
+});
+
 describe('theme switcher', () => {
   test('defaults to dark and toggles to light, persisting the choice', async () => {
     renderAt('#/');
@@ -78,5 +112,6 @@ describe('language switcher', () => {
     expect(screen.getByRole('heading', { level: 1, name: heroName(es) })).toBeInTheDocument();
     expect(localStorage.getItem('lang')).toBe('es');
     expect(screen.getByRole('button', { name: 'Switch to ES language' })).toHaveAttribute('aria-pressed', 'true');
+    expect(document.documentElement).toHaveAttribute('lang', 'es');
   });
 });

@@ -269,6 +269,27 @@ a:focus-visible {
   gap: 0.75rem;
 }
 
+/* Botón del menú móvil (solo visible con el menú colapsado) */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
 .App-header div:first-child {
   flex-shrink: 0;
 }
@@ -1018,8 +1039,30 @@ a:focus-visible {
   .actions { 
     grid-column: 2; 
   }
+  .menu-toggle {
+    display: inline-flex;
+  }
   .main-nav { 
-    display: none; /* ocultar menú en móviles */
+    display: none; /* menú colapsado en móviles, se abre con .menu-toggle */
+  }
+  .main-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    justify-self: stretch;
+    padding: 12px 16px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+  }
+  .main-nav.is-open a {
+    padding: 12px 16px;
+    border-radius: 10px;
   }
 }
 
