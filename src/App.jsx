@@ -1,6 +1,7 @@
 import "./Style.css";
 import "./StyleMedia.css";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { BlogPage } from "./BlogPage";
 import { ProfilePage } from "./ProfilePage";
@@ -11,10 +12,22 @@ import { ThemeProvider } from "./ThemeContext";
 // 🔁 Asegúrate de importar i18n config
 import "./i18n";
 
+// HashRouter no reinicia el scroll: al cambiar de página, volver arriba
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <ThemeProvider>
       <HashRouter>
+        <ScrollToTop />
         <Menu />
         <Routes>
           <Route path="/" element={<HomePage />} />

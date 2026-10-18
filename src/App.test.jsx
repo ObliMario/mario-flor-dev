@@ -45,6 +45,18 @@ describe('routing', () => {
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(title);
   });
 
+  test('navigating to another page scrolls back to the top', async () => {
+    const scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+    renderAt('#/blog');
+    scrollTo.mockClear();
+
+    await userEvent.click(screen.getByRole('link', { name: en.menu.home }));
+
+    expect(window.location.hash).toBe('#/');
+    expect(scrollTo).toHaveBeenCalledWith(0, 0);
+    scrollTo.mockRestore();
+  });
+
   test('unknown routes show Not found', () => {
     renderAt('#/does-not-exist');
     expect(screen.getByText('Not found')).toBeInTheDocument();
@@ -82,6 +94,16 @@ describe('mobile menu', () => {
     expect(window.location.hash).toBe('#/profile');
     expect(toggle).toHaveAttribute('aria-expanded', 'false');
     expect(nav).not.toHaveClass('is-open');
+  });
+
+  test('clicking the current page closes the menu', async () => {
+    renderAt('#/');
+    const toggle = screen.getByRole('button', { name: en.menu.toggle });
+
+    await userEvent.click(toggle);
+    await userEvent.click(screen.getByRole('link', { name: en.menu.home }));
+
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
   });
 });
 

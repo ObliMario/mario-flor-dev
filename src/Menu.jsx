@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "./logo.svg";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -26,12 +26,16 @@ function Menu() {
       <header className="app-header" role="banner">
         <div className="app-header__inner">
           {/* Brand/Logo - Columna del sidebar */}
-          <a className="brand" href="/">
+          <Link className="brand" to="/">
             <img src={logo} className="App-logo" alt="React Logo" />
-          </a>
+          </Link>
 
           {/* Main Navigation - Columna del contenido */}
-          <nav id="main-nav" className={`main-nav${menuOpen ? " is-open" : ""}`}>
+          <nav
+            id="main-nav"
+            className={`main-nav${menuOpen ? " is-open" : ""}`}
+            onClick={(e) => e.target.closest("a") && setMenuOpen(false)}
+          >
             {routes.map((route) => (
               <NavLink
                 key={route.path}
